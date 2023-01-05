@@ -8,12 +8,14 @@ import "glider-js/glider.min.css";
 import type { NextPage } from "next";
 import Image from "next/image";
 import Glider from "react-glider";
+import FormularioOrcamento from "./formulario";
 import ResponsiveAppBar from "./navbar";
 
 const Home: NextPage = () => {
   const theme = useTheme();
   const bgImageLight = 'url("banner-blackfishdigital.jpg")';
   const bgImageDark = 'url("banner-blackfishdigital-dark.jpg")';
+
   return (
     <div>
       <ResponsiveAppBar />
@@ -278,7 +280,7 @@ const Home: NextPage = () => {
         </Grid>
       </Box>
 
-      <Box className="homeBgCinza paddingG">
+      <Box className="homeBgCinza paddingG" sx={{ mt: 4 }}>
         <Box className="containerpuro" sx={{ textAlign: "center" }}>
           <Typography variant="h4" color="primary">
             <strong>QUEM CONFIA, RECOMENDA!</strong>
@@ -349,9 +351,37 @@ const Home: NextPage = () => {
       </Box>
 
       <Box className="marginTopG">
-        <Typography variant="h4" color="primary">
-          <strong>SOLICITE UM ORÇAMENTO</strong>
+        <Box sx={{ textAlign: "center" }}>
+          <Typography variant="h4" color="primary">
+            <strong>SOLICITE UM ORÇAMENTO</strong>
+          </Typography>
+        </Box>
+        <FormularioOrcamento />
+      </Box>
+
+      <Box sx={{ py: 2 }} className="copyright">
+        <Typography variant="body2" color="secondary">
+          <strong>
+            Todos os direitos reservados 2020 © BlackFish | Agência de Marketing
+          </strong>
         </Typography>
+        <Box className="displayflex">
+          <Typography
+            variant="body2"
+            color="secondary"
+            sx={{ textAlign: "right", mr: 1 }}
+          >
+            Desenvolvido com técnologia
+            <br />
+            <strong>ReactJS</strong>
+          </Typography>
+          <Image
+            src="/logo-reactjs.jpg"
+            alt="Logo ReactJS copyright"
+            width={56}
+            height={56}
+          />
+        </Box>
       </Box>
     </div>
   );
