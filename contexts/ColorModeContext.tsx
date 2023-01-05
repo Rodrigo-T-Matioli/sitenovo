@@ -21,6 +21,15 @@ export const ColorModeProvider = ({ children }: ColorModeProps) => {
   const theme = React.useMemo(
     () =>
       createTheme({
+        breakpoints: {
+          values: {
+            xs: 0,
+            sm: 600,
+            md: 900,
+            lg: 1200,
+            xl: 1536,
+          },
+        },
         palette: {
           mode,
           primary: {
@@ -48,6 +57,9 @@ export const ColorModeProvider = ({ children }: ColorModeProps) => {
                     ".containerpuro": {
                       margin: "auto",
                       maxWidth: 1300,
+                      ["@media (max-width:1300px)"]: {
+                        maxWidth: "90%",
+                      },
                     },
                     ".btnbranco": {
                       backgroundColor: "#ffffff !important",
@@ -112,6 +124,56 @@ export const ColorModeProvider = ({ children }: ColorModeProps) => {
                     ".bordaDepoimento": {
                       border: "10px solid #93277c",
                     },
+                    ".areaOrcamento": {
+                      width: "1400px",
+                      ["@media (max-width:1400px)"]: {
+                        maxWidth: "90%",
+                      },
+                      margin: "auto",
+                      background: "#451245",
+                      padding: "20px",
+                    },
+                    ".campoBlack": {
+                      border: "1px solid #ffffff !important",
+                    },
+                    ".campoBlack input, .campoBlack label, .campoBlack textarea":
+                      {
+                        color: "#ffffff !important",
+                      },
+                    ".campoBlack fieldset": {
+                      display: "none",
+                    },
+                    ".displayflex": {
+                      display: "flex",
+                      alignItems: "center",
+                    },
+                    ".btnenviar": {
+                      backgroundColor: "#93277c !important",
+                      color: "#ffffff !important",
+                      borderRadius: "100px !important",
+                      fontSize: "18px !important",
+                      padding: "8px",
+                      width: "100%",
+                      border: "none",
+                      marginTop: "10px",
+                    },
+                    ".areaTel": {
+                      border: "1px solid #ffffff",
+                      height: "100%",
+                      display: "flex",
+                      alignItems: "center",
+                    },
+                    ".copyright": {
+                      width: "1400px",
+                      ["@media (max-width:1400px)"]: {
+                        maxWidth: "90%",
+                      },
+                      margin: "auto",
+                      justifyContent: "space-between",
+                      flexWrap: "wrap",
+                      alignItems: "center",
+                      display: "flex",
+                    },
                   },
                 },
               },
@@ -130,6 +192,9 @@ export const ColorModeProvider = ({ children }: ColorModeProps) => {
                     ".containerpuro": {
                       margin: "auto",
                       maxWidth: 1300,
+                      ["@media (max-width:1300px)"]: {
+                        maxWidth: "90%",
+                      },
                     },
                     ".btnbranco": {
                       backgroundColor: "#ffffff !important",
@@ -188,8 +253,60 @@ export const ColorModeProvider = ({ children }: ColorModeProps) => {
                     ".btnpadrao": {
                       borderRadius: "100px !important",
                     },
+                    ".radius": {
+                      borderRadius: "500px !important",
+                    },
                     ".bordaDepoimento": {
                       border: "10px solid #93277c",
+                    },
+                    ".areaOrcamento": {
+                      width: "1400px",
+                      ["@media (max-width:1400px)"]: {
+                        maxWidth: "90%",
+                      },
+                      margin: "auto",
+                      background: "#451245",
+                      padding: "20px",
+                    },
+                    ".campoBlack": {
+                      border: "1px solid #ffffff !important",
+                    },
+                    ".campoBlack input, .campoBlack label": {
+                      color: "#ffffff !important",
+                    },
+                    ".campoBlack fieldset": {
+                      display: "none",
+                    },
+                    ".displayflex": {
+                      display: "flex",
+                      alignItems: "center",
+                    },
+                    ".btnenviar": {
+                      backgroundColor: "#93277c !important",
+                      color: "#ffffff !important",
+                      borderRadius: "100px !important",
+                      fontSize: "18px !important",
+                      p: 2,
+                      width: "100%",
+                      border: "none",
+                      mt: 1,
+                    },
+                    ".areaTel": {
+                      border: "1px solid #ffffff",
+                      height: "100%",
+                      display: "flex",
+                      alignItems: "center",
+                    },
+                    ".copyright": {
+                      width: "1400px",
+                      ["@media (max-width:1400px)"]: {
+                        maxWidth: "90%",
+                      },
+                      margin: "auto",
+                      justifyContent: "space-between",
+                      flexWrap: "wrap",
+                      alignItems: "center",
+                      display: "flex",
                     },
                   },
                 },
