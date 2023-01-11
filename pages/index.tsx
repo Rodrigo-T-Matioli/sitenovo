@@ -8,6 +8,9 @@ import "glider-js/glider.min.css";
 import type { NextPage } from "next";
 import Image from "next/image";
 import Glider from "react-glider";
+import profilePic from "../public/funil-de-vendas.jpg";
+import mapaBlabkDark from "../public/mapa-blackfishdigital-dark.png";
+import mapaBlabk from "../public/mapa-blackfishdigital.jpg";
 import FormularioOrcamento from "./formulario";
 import ResponsiveAppBar from "./navbar";
 
@@ -63,12 +66,35 @@ const Home: NextPage = () => {
 
       <Box className="containerpuro paddingTopG">
         <Grid container spacing={2}>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={12} lg={6}>
             <Typography color="primary" variant="h3">
               <strong>A MELHOR SOLUÇÃO EM MKT DIGITAL PARA PME{"'"}S</strong>
             </Typography>
+            <Box
+              sx={{ display: { xs: "block", lg: "none", textAlign: "center" } }}
+            >
+              {theme.palette.mode === "dark" ? (
+                <Image
+                  src={mapaBlabkDark}
+                  alt="Funil de vendas Black Fish Digital"
+                  className="funilHome"
+                />
+              ) : (
+                <Image
+                  src={mapaBlabk}
+                  alt="Funil de vendas Black Fish Digital"
+                  className="funilHome"
+                />
+              )}
+            </Box>
             <Grid container spacing={3} className="paddingTopM">
-              <Grid item xs={12} md={6} sx={{ textAlign: "center", p: 2 }}>
+              <Grid
+                item
+                xs={12}
+                md={12}
+                lg={6}
+                sx={{ textAlign: "center", p: 2 }}
+              >
                 {theme.palette.mode === "dark" ? (
                   <Image
                     src="/icon-google-ads-blackfishdigital-dark.png"
@@ -92,7 +118,13 @@ const Home: NextPage = () => {
                   suas vendas, receba mais orçamentos e ligações de clientes.
                 </Typography>
               </Grid>
-              <Grid item xs={12} md={6} sx={{ textAlign: "center", p: 2 }}>
+              <Grid
+                item
+                xs={12}
+                md={12}
+                lg={6}
+                sx={{ textAlign: "center", p: 2 }}
+              >
                 {theme.palette.mode === "dark" ? (
                   <Image
                     src="/icon-google-ads-blackfishdigital-dark.png"
@@ -117,7 +149,13 @@ const Home: NextPage = () => {
                   contínua!
                 </Typography>
               </Grid>
-              <Grid item xs={12} md={6} sx={{ textAlign: "center", p: 2 }}>
+              <Grid
+                item
+                xs={12}
+                md={12}
+                lg={6}
+                sx={{ textAlign: "center", p: 2 }}
+              >
                 {theme.palette.mode === "dark" ? (
                   <Image
                     src="/icon-google-ads-blackfishdigital-dark.png"
@@ -142,7 +180,13 @@ const Home: NextPage = () => {
                   aquisição até 3x menor do que um anúncio direto.
                 </Typography>
               </Grid>
-              <Grid item xs={12} md={6} sx={{ textAlign: "center", p: 2 }}>
+              <Grid
+                item
+                xs={12}
+                md={12}
+                lg={6}
+                sx={{ textAlign: "center", p: 2 }}
+              >
                 {theme.palette.mode === "dark" ? (
                   <Image
                     src="/icon-google-ads-blackfishdigital-dark.png"
@@ -169,21 +213,23 @@ const Home: NextPage = () => {
             </Grid>
           </Grid>
           <Grid item xs={12} md={6}>
-            {theme.palette.mode === "dark" ? (
-              <Image
-                src="/mapa-blackfishdigital-dark.png"
-                alt="Mapa Black Fish Digital"
-                width={580}
-                height={596}
-              />
-            ) : (
-              <Image
-                src="/mapa-blackfishdigital.jpg"
-                alt="Mapa Black Fish Digital"
-                width={580}
-                height={596}
-              />
-            )}
+            <Box sx={{ display: { xs: "none", lg: "block" } }}>
+              {theme.palette.mode === "dark" ? (
+                <Image
+                  src="/mapa-blackfishdigital-dark.png"
+                  alt="Mapa Black Fish Digital"
+                  width={580}
+                  height={596}
+                />
+              ) : (
+                <Image
+                  src="/mapa-blackfishdigital.jpg"
+                  alt="Mapa Black Fish Digital"
+                  width={580}
+                  height={596}
+                />
+              )}
+            </Box>
           </Grid>
         </Grid>
       </Box>
@@ -195,10 +241,10 @@ const Home: NextPage = () => {
             xs={12}
             md={6}
             sx={{
-              background: "#9cc580",
               textAlign: "center",
               position: "relative",
             }}
+            className="bgroxo homeEvolucao"
           >
             <Image
               src="/evolucao-do-treino-home-blackfishdigital.png"
@@ -212,7 +258,7 @@ const Home: NextPage = () => {
             <Typography variant="h6">
               CONHEÇA O CASE <strong>EVOLUÇÃO DO TREINO</strong>
             </Typography>
-            <Typography variant="h4" sx={{ color: "#688e4d" }}>
+            <Typography variant="h4" sx={{ color: "#491247" }}>
               <strong>+ DE R$ 1MIL EM CONSULTORIA</strong>
             </Typography>
             <Typography variant="body1">
@@ -222,7 +268,7 @@ const Home: NextPage = () => {
             <Button
               variant="contained"
               size="large"
-              className="btnCaseEvol"
+              className="btnpadrao"
               sx={{ mt: 3 }}
             >
               Ver case
@@ -231,53 +277,45 @@ const Home: NextPage = () => {
         </Grid>
       </Box>
 
-      <Box className="containerpuro paddingTopG">
-        <Grid container spacing={2}>
-          <Grid
-            item
-            xs={12}
-            md={6}
-            sx={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
+      <Box className="containerpuro paddingTopG homeEstrutura">
+        <Box sx={{ display: { xs: "block", lg: "none", textAlign: "center" } }}>
+          <Image
+            src={profilePic}
+            alt="Funil de vendas Black Fish Digital"
+            className="funilHome"
+          />
+        </Box>
+        <Box className="esqCol">
+          <Typography variant="h4" color="primary">
+            <strong>ESTRUTURAMOS O PROCESSO DE VENDAS DA SUA EMPRESA</strong>
+          </Typography>
+          <Typography variant="body1" className="paddingTopM">
+            Se vender é a essência do nosso trabalho, a forma como o seu
+            comercial atua também é nossa preocupação. Te ajudamos com a
+            implementação de um CRM e na criação de um funil de vendas
+            personalizado, na automatização de processos comerciais e na criação
+            de dashboards estratégicos. <br />
+            <br />
+            Sua empresa deve ser guiada por dados e não por “achismo” e nós te
+            ajudaremos com isso!
+          </Typography>
+          <Button
+            variant="contained"
+            size="large"
+            className="btnpadrao"
+            sx={{ mt: 3 }}
           >
-            <Box>
-              <Typography variant="h4">
-                <strong>
-                  ESTRUTURAMOS O PROCESSO DE VENDAS DA SUA EMPRESA
-                </strong>
-              </Typography>
-              <Typography variant="body1" className="paddingTopM">
-                Se vender é a essência do nosso trabalho, a forma como o seu
-                comercial atua também é nossa preocupação. Te ajudamos com a
-                implementação de um CRM e na criação de um funil de vendas
-                personalizado, na automatização de processos comerciais e na
-                criação de dashboards estratégicos. <br />
-                <br />
-                Sua empresa deve ser guiada por dados e não por “achismo” e nós
-                te ajudaremos com isso!
-              </Typography>
-              <Button
-                variant="contained"
-                size="large"
-                className="btnpadrao"
-                sx={{ mt: 3 }}
-              >
-                Ver case
-              </Button>
-            </Box>
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <Image
-              src="/funil-de-vendas.jpg"
-              alt="Funil de vendas Black Fish Digital"
-              width={654}
-              height={584}
-            />
-          </Grid>
-        </Grid>
+            Ver case
+          </Button>
+        </Box>
+        <Box sx={{ display: { xs: "none", lg: "block" } }}>
+          <Image
+            src="/funil-de-vendas.jpg"
+            alt="Funil de vendas Black Fish Digital"
+            width={654}
+            height={584}
+          />
+        </Box>
       </Box>
 
       <Box className="homeBgCinza paddingG" sx={{ mt: 4 }}>
@@ -310,22 +348,11 @@ const Home: NextPage = () => {
                   looked up one of the more obscure Latin words, consectetur,
                   from a Lorem Ipsum passage.
                 </Typography>
-              </div>
-              <div>
-                <Image
-                  src="/tabatamaffini-depoimento.jpg"
-                  alt="Funil de vendas Black Fish Digital"
-                  width={134}
-                  height={134}
-                  className="radius bordaDepoimento"
-                />
-                <Typography variant="body1">
-                  Contrary to popular belief, Lorem Ipsum is not simply random
-                  text. It has roots in a piece of classical Latin literature
-                  from 45 BC, making it over 2000 years old. Richard McClintock,
-                  a Latin professor at Hampden-Sydney College in Virginia,
-                  looked up one of the more obscure Latin words, consectetur,
-                  from a Lorem Ipsum passage.
+                <Typography variant="body1" color="primary" sx={{ mt: 3 }}>
+                  <strong>TABATA MAFFINI</strong>
+                </Typography>
+                <Typography variant="body2" color="primary">
+                  TABATA MAFFINI ACADEMY
                 </Typography>
               </div>
               <div>
@@ -343,6 +370,35 @@ const Home: NextPage = () => {
                   a Latin professor at Hampden-Sydney College in Virginia,
                   looked up one of the more obscure Latin words, consectetur,
                   from a Lorem Ipsum passage.
+                </Typography>
+                <Typography variant="body1" color="primary" sx={{ mt: 3 }}>
+                  <strong>TABATA MAFFINI</strong>
+                </Typography>
+                <Typography variant="body2" color="primary">
+                  TABATA MAFFINI ACADEMY
+                </Typography>
+              </div>
+              <div>
+                <Image
+                  src="/tabatamaffini-depoimento.jpg"
+                  alt="Funil de vendas Black Fish Digital"
+                  width={134}
+                  height={134}
+                  className="radius bordaDepoimento"
+                />
+                <Typography variant="body1">
+                  Contrary to popular belief, Lorem Ipsum is not simply random
+                  text. It has roots in a piece of classical Latin literature
+                  from 45 BC, making it over 2000 years old. Richard McClintock,
+                  a Latin professor at Hampden-Sydney College in Virginia,
+                  looked up one of the more obscure Latin words, consectetur,
+                  from a Lorem Ipsum passage.
+                </Typography>
+                <Typography variant="body1" color="primary" sx={{ mt: 3 }}>
+                  <strong>TABATA MAFFINI</strong>
+                </Typography>
+                <Typography variant="body2" color="primary">
+                  TABATA MAFFINI ACADEMY
                 </Typography>
               </div>
             </Glider>
@@ -360,28 +416,67 @@ const Home: NextPage = () => {
       </Box>
 
       <Box sx={{ py: 2 }} className="copyright">
-        <Typography variant="body2" color="secondary">
-          <strong>
-            Todos os direitos reservados 2020 © BlackFish | Agência de Marketing
-          </strong>
-        </Typography>
-        <Box className="displayflex">
-          <Typography
-            variant="body2"
-            color="secondary"
-            sx={{ textAlign: "right", mr: 1 }}
-          >
-            Desenvolvido com técnologia
-            <br />
-            <strong>ReactJS</strong>
-          </Typography>
-          <Image
-            src="/logo-reactjs.jpg"
-            alt="Logo ReactJS copyright"
-            width={56}
-            height={56}
-          />
-        </Box>
+        <Grid container spacing={2}>
+          <Grid item xs={12} md={12} lg={6} className="txtCopyRight">
+            <Typography variant="body2" color="secondary">
+              <strong>
+                Todos os direitos reservados 2020 © BlackFish | Agência de
+                Marketing
+              </strong>
+            </Typography>
+          </Grid>
+          <Grid item xs={12} md={12} lg={6}>
+            <Box className="logoReactAlign">
+              <Box
+                sx={{
+                  display: { xs: "block", md: "none" },
+                  textAlign: { xs: "center" },
+                }}
+              >
+                {theme.palette.mode === "dark" ? (
+                  <Image
+                    src="/logo-reactjs-dark.png"
+                    alt="Logo ReactJS copyright"
+                    width={56}
+                    height={56}
+                  />
+                ) : (
+                  <Image
+                    src="/logo-reactjs.png"
+                    alt="Logo ReactJS copyright"
+                    width={56}
+                    height={56}
+                  />
+                )}
+              </Box>
+              <Box sx={{ textAlign: { xs: "center", md: "right" } }}>
+                <Typography variant="body2" color="secondary">
+                  Desenvolvido com técnologia
+                </Typography>
+                <Typography variant="body2" color="secondary">
+                  <strong> ReactJS </strong>
+                </Typography>
+              </Box>
+              <Box sx={{ display: { xs: "none", md: "block" } }}>
+                {theme.palette.mode === "dark" ? (
+                  <Image
+                    src="/logo-reactjs-dark.png"
+                    alt="Logo ReactJS copyright"
+                    width={56}
+                    height={56}
+                  />
+                ) : (
+                  <Image
+                    src="/logo-reactjs.png"
+                    alt="Logo ReactJS copyright"
+                    width={56}
+                    height={56}
+                  />
+                )}
+              </Box>
+            </Box>
+          </Grid>
+        </Grid>
       </Box>
     </div>
   );

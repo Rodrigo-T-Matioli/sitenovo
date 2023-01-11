@@ -54,6 +54,22 @@ export const ColorModeProvider = ({ children }: ColorModeProps) => {
                     a: {
                       textDecoration: "none !important",
                     },
+                    h2: {
+                      ["@media (max-width:900px)"]: {
+                        fontSize: "50px !important",
+                      },
+                      ["@media (max-width:600px)"]: {
+                        fontSize: "30px !important",
+                      },
+                    },
+                    h3: {
+                      ["@media (max-width:900px)"]: {
+                        fontSize: "35px !important",
+                      },
+                      ["@media (max-width:600px)"]: {
+                        fontSize: "24px !important",
+                      },
+                    },
                     ".containerpuro": {
                       margin: "auto",
                       maxWidth: 1300,
@@ -64,6 +80,11 @@ export const ColorModeProvider = ({ children }: ColorModeProps) => {
                     ".btnbranco": {
                       backgroundColor: "#ffffff !important",
                       color: "#491247 !important",
+                      borderRadius: "100px !important",
+                    },
+                    ".btnbrancoverde": {
+                      backgroundColor: "#ffffff !important",
+                      color: "#9cc480 !important",
                       borderRadius: "100px !important",
                     },
                     ".colorwhite": {
@@ -93,6 +114,18 @@ export const ColorModeProvider = ({ children }: ColorModeProps) => {
                     ".paddingTopP": {
                       paddingTop: "10px",
                     },
+                    ".paddingBottomXG": {
+                      paddingBottom: "130px",
+                    },
+                    ".paddingBottomG": {
+                      paddingBottom: "50px",
+                    },
+                    ".paddingBottomM": {
+                      paddingBottom: "25px",
+                    },
+                    ".paddingBottomP": {
+                      paddingBottom: "10px",
+                    },
                     ".marginTopG": {
                       paddingTop: "50px",
                     },
@@ -110,10 +143,27 @@ export const ColorModeProvider = ({ children }: ColorModeProps) => {
                       color: "#f1f1f1 !important",
                       borderRadius: "100px !important",
                     },
+                    ".homeEvolucao": {
+                      ["@media (max-width:900px)"]: {
+                        height: "285px",
+                        padding: "0px !important",
+                      },
+                    },
                     ".homeImgCase": {
                       position: "absolute",
                       bottom: 0,
                       left: "30%",
+                      ["@media (max-width:1200px)"]: {
+                        left: "5%",
+                      },
+                      ["@media (max-width:900px)"]: {
+                        position: "relative",
+                        bottom: "auto",
+                        left: "auto",
+                        margin: "auto",
+                        height: "285px",
+                        width: "300px",
+                      },
                     },
                     ".btnpadrao": {
                       borderRadius: "100px !important",
@@ -127,7 +177,7 @@ export const ColorModeProvider = ({ children }: ColorModeProps) => {
                     ".areaOrcamento": {
                       width: "1400px",
                       ["@media (max-width:1400px)"]: {
-                        maxWidth: "90%",
+                        width: "90%",
                       },
                       margin: "auto",
                       background: "#451245",
@@ -146,6 +196,28 @@ export const ColorModeProvider = ({ children }: ColorModeProps) => {
                     ".displayflex": {
                       display: "flex",
                       alignItems: "center",
+                    },
+                    ".displayflexwrap": {
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "space-between",
+                      flexWrap: "wrap",
+                    },
+                    ".esqCol": {
+                      width: "50%",
+                      paddingRight: "50px",
+                      ["@media (max-width:1200px)"]: {
+                        width: "100%",
+                        paddingRight: "10px",
+                        padding: "10px",
+                      },
+                    },
+                    ".homeEstrutura": {
+                      display: "flex",
+                      alignItems: "center",
+                      ["@media (max-width:1200px)"]: {
+                        display: "grid",
+                      },
                     },
                     ".btnenviar": {
                       backgroundColor: "#93277c !important",
@@ -166,13 +238,115 @@ export const ColorModeProvider = ({ children }: ColorModeProps) => {
                     ".copyright": {
                       width: "1400px",
                       ["@media (max-width:1400px)"]: {
-                        maxWidth: "90%",
+                        width: "90%",
                       },
                       margin: "auto",
                       justifyContent: "space-between",
                       flexWrap: "wrap",
                       alignItems: "center",
                       display: "flex",
+                    },
+                    ".imgFunil": {
+                      ["@media (max-width:1300px)"]: {
+                        transform: "scale(0.7)",
+                      },
+                    },
+                    ".funilHome": {
+                      ["@media (max-width:720px)"]: {
+                        width: "100%",
+                        height: "auto",
+                      },
+                    },
+                    ".planoGoogle": {
+                      backgroundColor: "#79c7e1",
+                      textAlign: "center",
+                      padding: "20px",
+                      borderTopLeftRadius: "30px",
+                      borderTopRightRadius: "30px",
+                    },
+                    ".btnGoogle": {
+                      backgroundColor: "#69b8d3 !important",
+                    },
+                    ".boxPlanos": {
+                      backgroundColor: "#f2f1f1",
+                      textAling: "center !important",
+                      width: "100%",
+                    },
+                    ".planoGoogleRodape": {
+                      backgroundColor: "#79c7e1",
+                      padding: "10px",
+                      borderBottomLeftRadius: "30px",
+                      borderBottomRightRadius: "30px",
+                    },
+                    ".colorGoogle": {
+                      color: "#79c7e1",
+                    },
+                    ".planoSocial": {
+                      backgroundColor: "#c480b6",
+                      textAlign: "center",
+                      padding: "20px",
+                      borderTopLeftRadius: "30px",
+                      borderTopRightRadius: "30px",
+                    },
+                    ".btnSocial": {
+                      backgroundColor: "#ab689d !important",
+                    },
+                    ".planoSocialRodape": {
+                      backgroundColor: "#c480b6",
+                      padding: "10px",
+                      borderBottomLeftRadius: "30px",
+                      borderBottomRightRadius: "30px",
+                    },
+                    ".colorSocial": {
+                      color: "#c480b6",
+                    },
+                    ".planoGoogleSocial": {
+                      backgroundColor: "#9cc480",
+                      textAlign: "center",
+                      padding: "20px",
+                      borderTopLeftRadius: "30px",
+                      borderTopRightRadius: "30px",
+                    },
+                    ".btnGoogleSocial": {
+                      backgroundColor: "#86ac6c !important",
+                    },
+                    ".planoGoogleSocialRodape": {
+                      backgroundColor: "#9cc480",
+                      padding: "10px",
+                      borderBottomLeftRadius: "30px",
+                      borderBottomRightRadius: "30px",
+                    },
+                    ".colorGoogleSocial": {
+                      color: "#9cc480",
+                    },
+                    ".bgLinhaPosicao": {
+                      backgroundRepeat: "no-repeat",
+                      backgroundPosition: "center",
+                    },
+                    ".logoReactAlign": {
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "right",
+                      ["@media (max-width:900px)"]: {
+                        display: "grid",
+                        justifyContent: "center",
+                      },
+                    },
+                    ".txtCopyRight": {
+                      textAlign: "left",
+                      ["@media (max-width:900px)"]: {
+                        textAlign: "center",
+                      },
+                    },
+                    ".casesEvolucao": {
+                      position: "absolute",
+                      bottom: "-72px",
+                      right: "0px",
+                    },
+                    ".casesImportados": {
+                      position: "absolute",
+                      bottom: "-122px",
+                      left: "0px",
                     },
                   },
                 },
@@ -186,7 +360,23 @@ export const ColorModeProvider = ({ children }: ColorModeProps) => {
                     a: {
                       textDecoration: "none !important",
                     },
-                    "h1, h2, h3, h4, h5, h6": {
+                    h2: {
+                      ["@media (max-width:900px)"]: {
+                        fontSize: "50px !important",
+                      },
+                      ["@media (max-width:600px)"]: {
+                        fontSize: "30px !important",
+                      },
+                    },
+                    h3: {
+                      ["@media (max-width:900px)"]: {
+                        fontSize: "35px !important",
+                      },
+                      ["@media (max-width:600px)"]: {
+                        fontSize: "24px !important",
+                      },
+                    },
+                    "h1, h2, h3, h4, h5, h6, p": {
                       color: "#ffffff !important",
                     },
                     ".containerpuro": {
@@ -197,6 +387,11 @@ export const ColorModeProvider = ({ children }: ColorModeProps) => {
                       },
                     },
                     ".btnbranco": {
+                      backgroundColor: "#ffffff !important",
+                      color: "#1e1e1e !important",
+                      borderRadius: "100px !important",
+                    },
+                    ".btnbrancoverde": {
                       backgroundColor: "#ffffff !important",
                       color: "#1e1e1e !important",
                       borderRadius: "100px !important",
@@ -228,6 +423,18 @@ export const ColorModeProvider = ({ children }: ColorModeProps) => {
                     ".paddingTopP": {
                       paddingTop: "10px",
                     },
+                    ".paddingBottomXG": {
+                      paddingBottom: "130px",
+                    },
+                    ".paddingBottomG": {
+                      paddingBottom: "50px",
+                    },
+                    ".paddingBottomM": {
+                      paddingBottom: "25px",
+                    },
+                    ".paddingBottomP": {
+                      paddingBottom: "10px",
+                    },
                     ".marginTopG": {
                       paddingTop: "50px",
                     },
@@ -245,27 +452,46 @@ export const ColorModeProvider = ({ children }: ColorModeProps) => {
                       color: "#f1f1f1 !important",
                       borderRadius: "100px !important",
                     },
+                    ".homeEvolucao": {
+                      ["@media (max-width:900px)"]: {
+                        height: "285px",
+                        padding: "0px !important",
+                      },
+                    },
                     ".homeImgCase": {
                       position: "absolute",
                       bottom: 0,
                       left: "30%",
+                      ["@media (max-width:1200px)"]: {
+                        left: "5%",
+                      },
+                      ["@media (max-width:900px)"]: {
+                        position: "relative",
+                        bottom: "auto",
+                        left: "auto",
+                        margin: "auto",
+                        height: "285px",
+                        width: "300px",
+                      },
                     },
                     ".btnpadrao": {
                       borderRadius: "100px !important",
+                      background: "#ffffff !important",
+                      color: "#000000 !important",
                     },
                     ".radius": {
                       borderRadius: "500px !important",
                     },
                     ".bordaDepoimento": {
-                      border: "10px solid #93277c",
+                      border: "10px solid #000000",
                     },
                     ".areaOrcamento": {
                       width: "1400px",
                       ["@media (max-width:1400px)"]: {
-                        maxWidth: "90%",
+                        width: "90%",
                       },
                       margin: "auto",
-                      background: "#451245",
+                      background: "#1e1e1e",
                       padding: "20px",
                     },
                     ".campoBlack": {
@@ -281,15 +507,37 @@ export const ColorModeProvider = ({ children }: ColorModeProps) => {
                       display: "flex",
                       alignItems: "center",
                     },
+                    ".displayflexwrap": {
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "space-between",
+                      flexWrap: "wrap",
+                    },
+                    ".esqCol": {
+                      width: "50%",
+                      paddingRight: "50px",
+                      ["@media (max-width:1200px)"]: {
+                        width: "100%",
+                        paddingRight: "10px",
+                        padding: "10px",
+                      },
+                    },
+                    ".homeEstrutura": {
+                      display: "flex",
+                      alignItems: "center",
+                      ["@media (max-width:1200px)"]: {
+                        display: "grid",
+                      },
+                    },
                     ".btnenviar": {
-                      backgroundColor: "#93277c !important",
+                      backgroundColor: "#000000 !important",
                       color: "#ffffff !important",
                       borderRadius: "100px !important",
                       fontSize: "18px !important",
-                      p: 2,
+                      padding: "8px",
                       width: "100%",
                       border: "none",
-                      mt: 1,
+                      marginTop: "10px",
                     },
                     ".areaTel": {
                       border: "1px solid #ffffff",
@@ -300,13 +548,110 @@ export const ColorModeProvider = ({ children }: ColorModeProps) => {
                     ".copyright": {
                       width: "1400px",
                       ["@media (max-width:1400px)"]: {
-                        maxWidth: "90%",
+                        width: "90%",
                       },
                       margin: "auto",
                       justifyContent: "space-between",
                       flexWrap: "wrap",
                       alignItems: "center",
                       display: "flex",
+                    },
+                    ".imgFunil": {
+                      ["@media (max-width:1300px)"]: {
+                        transform: "scale(0.7)",
+                      },
+                    },
+                    ".funilHome": {
+                      ["@media (max-width:720px)"]: {
+                        width: "100%",
+                        height: "auto",
+                      },
+                    },
+                    ".planoGoogle": {
+                      backgroundColor: "#3f3f3f",
+                      textAlign: "center",
+                      padding: "20px",
+                      borderTopLeftRadius: "30px",
+                      borderTopRightRadius: "30px",
+                    },
+                    ".btnGoogle": {
+                      backgroundColor: "#363636 !important",
+                    },
+                    ".boxPlanos": {
+                      backgroundColor: "#4e4e4e",
+                      textAling: "center !important",
+                      width: "100%",
+                    },
+                    ".planoGoogleRodape": {
+                      backgroundColor: "#3f3f3f",
+                      padding: "10px",
+                      borderBottomLeftRadius: "30px",
+                      borderBottomRightRadius: "30px",
+                    },
+                    ".colorGoogle": {
+                      color: "#f1f1f1",
+                    },
+                    ".planoSocial": {
+                      backgroundColor: "#3f3f3f",
+                      textAlign: "center",
+                      padding: "20px",
+                      borderTopLeftRadius: "30px",
+                      borderTopRightRadius: "30px",
+                    },
+                    ".btnSocial": {
+                      backgroundColor: "#363636 !important",
+                    },
+                    ".planoSocialRodape": {
+                      backgroundColor: "#3f3f3f",
+                      padding: "10px",
+                      borderBottomLeftRadius: "30px",
+                      borderBottomRightRadius: "30px",
+                    },
+                    ".colorSocial": {
+                      color: "#f1f1f1",
+                    },
+                    ".planoGoogleSocial": {
+                      backgroundColor: "#3f3f3f",
+                      textAlign: "center",
+                      padding: "20px",
+                      borderTopLeftRadius: "30px",
+                      borderTopRightRadius: "30px",
+                    },
+                    ".btnGoogleSocial": {
+                      backgroundColor: "#363636 !important",
+                    },
+                    ".planoGoogleSocialRodape": {
+                      backgroundColor: "#3f3f3f",
+                      padding: "10px",
+                      borderBottomLeftRadius: "30px",
+                      borderBottomRightRadius: "30px",
+                    },
+                    ".colorGoogleSocial": {
+                      color: "#f1f1f1",
+                    },
+                    ".bgLinhaPosicao": {
+                      backgroundRepeat: "no-repeat",
+                      backgroundPosition: "center",
+                    },
+                    ".logoReactAlign": {
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "right",
+                      ["@media (max-width:900px)"]: {
+                        display: "grid",
+                        justifyContent: "center",
+                      },
+                    },
+                    ".txtCopyRight": {
+                      textAlign: "left",
+                      ["@media (max-width:900px)"]: {
+                        textAlign: "center",
+                      },
+                    },
+                    ".casesEvolucao": {
+                      position: "absolute",
+                      bottom: "-122px",
+                      right: "0px",
                     },
                   },
                 },
