@@ -10,6 +10,7 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { useTheme } from "@mui/material/styles";
 import Toolbar from "@mui/material/Toolbar";
+import Tooltip from "@mui/material/Tooltip";
 import Typography from "@mui/material/Typography";
 import { useRouter } from "next/router";
 import * as React from "react";
@@ -30,7 +31,7 @@ const pages = [
     txt: "Planos",
   },
   {
-    url: "#",
+    url: "#orcamento",
     txt: "Orçamento",
   },
 ];
@@ -118,17 +119,19 @@ function ResponsiveAppBar() {
             ))}
           </Box>
           <Box sx={{ flexGrow: 0, display: "flex" }}>
-            <IconButton
-              sx={{ ml: 1 }}
-              onClick={colorMode.toggleColorMode}
-              color="inherit"
-            >
-              {theme.palette.mode === "dark" ? (
-                <Brightness4Icon />
-              ) : (
-                <Brightness7Icon />
-              )}
-            </IconButton>
+            <Tooltip title="Tem sensibilidade à luz?">
+              <IconButton
+                sx={{ ml: 1 }}
+                onClick={colorMode.toggleColorMode}
+                color="inherit"
+              >
+                {theme.palette.mode === "dark" ? (
+                  <Brightness4Icon />
+                ) : (
+                  <Brightness7Icon />
+                )}
+              </IconButton>
+            </Tooltip>
           </Box>
         </Toolbar>
       </Container>

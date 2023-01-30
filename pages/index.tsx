@@ -110,7 +110,7 @@ const Home: NextPage = () => {
                     height={100}
                   />
                 )}
-                <Typography variant="body1">
+                <Typography variant="body1" color="primary">
                   <strong>GOOGLE ADS</strong>
                 </Typography>
                 <Typography variant="body2">
@@ -127,20 +127,20 @@ const Home: NextPage = () => {
               >
                 {theme.palette.mode === "dark" ? (
                   <Image
-                    src="/icon-google-ads-blackfishdigital-dark.png"
+                    src="/icon-insta-facebook-ads-blackfishdigital-dark.png"
                     alt="Icone Google Ads Black Fish Digital"
                     width={100}
                     height={100}
                   />
                 ) : (
                   <Image
-                    src="/icon-google-ads-blackfishdigital.png"
+                    src="/icon-insta-facebook-ads-blackfishdigital.jpg"
                     alt="Icone Google Ads Black Fish Digital"
                     width={100}
                     height={100}
                   />
                 )}
-                <Typography variant="body1">
+                <Typography variant="body1" color="primary">
                   <strong>FACEBOOK / INSTAGRAM ADS</strong>
                 </Typography>
                 <Typography variant="body2">
@@ -158,26 +158,25 @@ const Home: NextPage = () => {
               >
                 {theme.palette.mode === "dark" ? (
                   <Image
-                    src="/icon-google-ads-blackfishdigital-dark.png"
+                    src="/icon-plataforma-web-blackfishdigital-dark.png"
                     alt="Icone Google Ads Black Fish Digital"
                     width={100}
                     height={100}
                   />
                 ) : (
                   <Image
-                    src="/icon-google-ads-blackfishdigital.png"
+                    src="/icon-plataforma-web-blackfishdigital.jpg"
                     alt="Icone Google Ads Black Fish Digital"
                     width={100}
                     height={100}
                   />
                 )}
-                <Typography variant="body1">
-                  <strong>INBOUND MARKETING</strong>
+                <Typography variant="body1" color="primary">
+                  <strong>PLATAFORMAS WEB</strong>
                 </Typography>
                 <Typography variant="body2">
-                  Acompanhe a jornada de consumo de todos os seus leads e
-                  converta-os em clientes na hora certa, com um custo por
-                  aquisição até 3x menor do que um anúncio direto.
+                  Desenvolvemos Websites Institucionais, Catálogos Virtuais,
+                  Landing Pages, Lojas Online e muito mais.
                 </Typography>
               </Grid>
               <Grid
@@ -189,20 +188,20 @@ const Home: NextPage = () => {
               >
                 {theme.palette.mode === "dark" ? (
                   <Image
-                    src="/icon-google-ads-blackfishdigital-dark.png"
+                    src="/icon-seo-blackfishdigital-dark.png"
                     alt="Icone Google Ads Black Fish Digital"
                     width={100}
                     height={100}
                   />
                 ) : (
                   <Image
-                    src="/icon-google-ads-blackfishdigital.png"
+                    src="/icon-seo-blackfishdigital.jpg"
                     alt="Icone Google Ads Black Fish Digital"
                     width={100}
                     height={100}
                   />
                 )}
-                <Typography variant="body1">
+                <Typography variant="body1" color="primary">
                   <strong>SEO</strong>
                 </Typography>
                 <Typography variant="body2">
@@ -255,24 +254,76 @@ const Home: NextPage = () => {
             />
           </Grid>
           <Grid item xs={12} md={6} className="homeBgCinza paddingG">
-            <Typography variant="h6">
-              CONHEÇA O CASE <strong>EVOLUÇÃO DO TREINO</strong>
-            </Typography>
-            <Typography variant="h4" sx={{ color: "#491247" }}>
-              <strong>+ DE R$ 1MIL EM CONSULTORIA</strong>
-            </Typography>
-            <Typography variant="body1">
-              Veja como rede de escolas bateu seu record de matrículas e faturou
-              mais de R$ 7mi em vendas, só com marketing digital:
-            </Typography>
-            <Button
-              variant="contained"
-              size="large"
-              className="btnpadrao"
-              sx={{ mt: 3 }}
-            >
-              Ver case
-            </Button>
+            <Box className="case-home-txt">
+              <Typography variant="h6">
+                CONHEÇA O CASE <strong>EVOLUÇÃO DO TREINO</strong>
+              </Typography>
+              <Typography variant="h4" sx={{ color: "#491247" }}>
+                <strong>+ DE R$ 1MIL EM CONSULTORIA</strong>
+              </Typography>
+              <Typography variant="body1">
+                Veja como a consultória bateu seu record de vendas e faturou
+                mais de R$ 500 mil em vendas, só com marketing digital:
+              </Typography>
+              <Button
+                variant="contained"
+                size="large"
+                className="btnpadrao"
+                sx={{ mt: 3 }}
+              >
+                Ver case
+              </Button>
+            </Box>
+          </Grid>
+        </Grid>
+      </Box>
+
+      <Box className="home-case2">
+        <Grid container spacing={2}>
+          <Grid
+            item
+            xs={12}
+            md={6}
+            className="homeBgCinza paddingG displayflexright"
+          >
+            <Box className="case-home-txt">
+              <Typography variant="h6">
+                CONHEÇA O CASE <strong>SANTANDER</strong>
+              </Typography>
+              <Typography variant="h4" sx={{ color: "#491247" }}>
+                <strong>PLATAFORMA DE GAMEFICAÇÃO</strong>
+              </Typography>
+              <Typography variant="body1">
+                Temos uma equipe de designers, programadores e conteúdo digital
+                qualificadas para criar o produto digital que precisa.
+              </Typography>
+              <Button
+                variant="contained"
+                size="large"
+                className="btnpadrao"
+                sx={{ mt: 3 }}
+              >
+                Ver case
+              </Button>
+            </Box>
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            md={6}
+            sx={{
+              textAlign: "center",
+              position: "relative",
+            }}
+            className="bgroxo homeEvolucao"
+          >
+            <Image
+              src="/santander-home-blackfishdigital.png"
+              alt="Santander e Black Fish Digital"
+              width={523}
+              height={333}
+              className="homeImgCase"
+            />
           </Grid>
         </Grid>
       </Box>
@@ -406,7 +457,7 @@ const Home: NextPage = () => {
         </Box>
       </Box>
 
-      <Box className="marginTopG">
+      <Box className="marginTopG" id="orcamento">
         <Box sx={{ textAlign: "center" }}>
           <Typography variant="h4" color="primary">
             <strong>SOLICITE UM ORÇAMENTO</strong>

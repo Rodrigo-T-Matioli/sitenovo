@@ -70,6 +70,14 @@ export const ColorModeProvider = ({ children }: ColorModeProps) => {
                         fontSize: "24px !important",
                       },
                     },
+                    h4: {
+                      ["@media (max-width:900px)"]: {
+                        fontSize: "30px !important",
+                      },
+                      ["@media (max-width:600px)"]: {
+                        fontSize: "20px !important",
+                      },
+                    },
                     ".containerpuro": {
                       margin: "auto",
                       maxWidth: 1300,
@@ -85,6 +93,16 @@ export const ColorModeProvider = ({ children }: ColorModeProps) => {
                     ".btnbrancoverde": {
                       backgroundColor: "#ffffff !important",
                       color: "#9cc480 !important",
+                      borderRadius: "100px !important",
+                    },
+                    ".btnbrancoazul": {
+                      backgroundColor: "#ffffff !important",
+                      color: "#79c7e1 !important",
+                      borderRadius: "100px !important",
+                    },
+                    ".btnbrancovermelho": {
+                      backgroundColor: "#ffffff !important",
+                      color: "#f48385 !important",
                       borderRadius: "100px !important",
                     },
                     ".colorwhite": {
@@ -202,6 +220,11 @@ export const ColorModeProvider = ({ children }: ColorModeProps) => {
                       alignItems: "center",
                       justifyContent: "space-between",
                       flexWrap: "wrap",
+                    },
+                    ".displayflexright": {
+                      display: "flex",
+                      alignItems: "right",
+                      justifyContent: "right",
                     },
                     ".esqCol": {
                       width: "50%",
@@ -340,13 +363,85 @@ export const ColorModeProvider = ({ children }: ColorModeProps) => {
                     },
                     ".casesEvolucao": {
                       position: "absolute",
-                      bottom: "-72px",
+                      bottom: "-122px",
                       right: "0px",
                     },
                     ".casesImportados": {
                       position: "absolute",
-                      bottom: "-122px",
-                      left: "0px",
+                      bottom: "-72px",
+                      left: "calc(100% - 70%)",
+                    },
+                    ".case-home-txt": {
+                      width: "590px",
+                    },
+                    ".home-case2": {
+                      padding: "16px !important",
+                    },
+                    ".corverde": {
+                      color: "#5bb74c",
+                    },
+                    ".positionRelative": {
+                      position: "relative",
+                    },
+                    ".metricaTopEsq": {
+                      position: "absolute",
+                      top: 50,
+                      left: 0,
+                      ["@media (max-width:1050px)"]: {
+                        position: "relative",
+                        top: "auto",
+                        left: "auto",
+                        width: "50%",
+                        float: "left",
+                      },
+                    },
+                    ".metricaTopDir": {
+                      position: "absolute",
+                      top: 50,
+                      right: 0,
+                      ["@media (max-width:1050px)"]: {
+                        position: "relative",
+                        top: "auto",
+                        right: "auto",
+                        width: "50%",
+                        float: "left",
+                      },
+                    },
+                    ".metricaBottomEsq": {
+                      position: "absolute",
+                      bottom: 100,
+                      left: 0,
+                      ["@media (max-width:1050px)"]: {
+                        position: "relative",
+                        bottom: "auto",
+                        left: "auto",
+                        width: "50%",
+                        float: "left",
+                      },
+                    },
+                    ".metricaBottomDir": {
+                      position: "absolute",
+                      bottom: 100,
+                      right: 0,
+                      ["@media (max-width:1050px)"]: {
+                        position: "relative",
+                        bottom: "auto",
+                        right: "auto",
+                        width: "50%",
+                        float: "left",
+                      },
+                    },
+                    ".plataformaEvolucao": {
+                      ["@media (max-width:900px)"]: {
+                        width: "100%",
+                        height: "auto",
+                      },
+                    },
+                    ".metricasEvolucao": {
+                      ["@media (max-width:1050px)"]: {
+                        width: "80%",
+                        height: "auto",
+                      },
                     },
                   },
                 },
@@ -376,6 +471,14 @@ export const ColorModeProvider = ({ children }: ColorModeProps) => {
                         fontSize: "24px !important",
                       },
                     },
+                    h4: {
+                      ["@media (max-width:900px)"]: {
+                        fontSize: "30px !important",
+                      },
+                      ["@media (max-width:600px)"]: {
+                        fontSize: "20px !important",
+                      },
+                    },
                     "h1, h2, h3, h4, h5, h6, p": {
                       color: "#ffffff !important",
                     },
@@ -392,6 +495,16 @@ export const ColorModeProvider = ({ children }: ColorModeProps) => {
                       borderRadius: "100px !important",
                     },
                     ".btnbrancoverde": {
+                      backgroundColor: "#ffffff !important",
+                      color: "#1e1e1e !important",
+                      borderRadius: "100px !important",
+                    },
+                    ".btnbrancoazul": {
+                      backgroundColor: "#ffffff !important",
+                      color: "#1e1e1e !important",
+                      borderRadius: "100px !important",
+                    },
+                    ".btnbrancovermelho": {
                       backgroundColor: "#ffffff !important",
                       color: "#1e1e1e !important",
                       borderRadius: "100px !important",
@@ -512,6 +625,11 @@ export const ColorModeProvider = ({ children }: ColorModeProps) => {
                       alignItems: "center",
                       justifyContent: "space-between",
                       flexWrap: "wrap",
+                    },
+                    ".displayflexright": {
+                      display: "flex",
+                      alignItems: "right",
+                      justifyContent: "right",
                     },
                     ".esqCol": {
                       width: "50%",
@@ -652,6 +770,83 @@ export const ColorModeProvider = ({ children }: ColorModeProps) => {
                       position: "absolute",
                       bottom: "-122px",
                       right: "0px",
+                    },
+                    ".casesImportados": {
+                      position: "absolute",
+                      bottom: "-72px",
+                      left: "calc(100% - 70%)",
+                    },
+                    ".case-home-txt": {
+                      width: "590px",
+                    },
+                    ".home-case2": {
+                      padding: "16px !important",
+                    },
+                    ".corverde": {
+                      color: "#ffffff",
+                    },
+                    ".positionRelative": {
+                      position: "relative",
+                    },
+                    ".metricaTopEsq": {
+                      position: "absolute",
+                      top: 50,
+                      left: 0,
+                      ["@media (max-width:1050px)"]: {
+                        position: "relative",
+                        top: "auto",
+                        left: "auto",
+                        width: "50%",
+                        float: "left",
+                      },
+                    },
+                    ".metricaTopDir": {
+                      position: "absolute",
+                      top: 50,
+                      right: 0,
+                      ["@media (max-width:1050px)"]: {
+                        position: "relative",
+                        top: "auto",
+                        right: "auto",
+                        width: "50%",
+                        float: "left",
+                      },
+                    },
+                    ".metricaBottomEsq": {
+                      position: "absolute",
+                      bottom: 100,
+                      left: 0,
+                      ["@media (max-width:1050px)"]: {
+                        position: "relative",
+                        bottom: "auto",
+                        left: "auto",
+                        width: "50%",
+                        float: "left",
+                      },
+                    },
+                    ".metricaBottomDir": {
+                      position: "absolute",
+                      bottom: 100,
+                      right: 0,
+                      ["@media (max-width:1050px)"]: {
+                        position: "relative",
+                        bottom: "auto",
+                        right: "auto",
+                        width: "50%",
+                        float: "left",
+                      },
+                    },
+                    ".plataformaEvolucao": {
+                      ["@media (max-width:900px)"]: {
+                        width: "100%",
+                        height: "auto",
+                      },
+                    },
+                    ".metricasEvolucao": {
+                      ["@media (max-width:1050px)"]: {
+                        width: "80%",
+                        height: "auto",
+                      },
                     },
                   },
                 },

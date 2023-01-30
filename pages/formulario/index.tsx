@@ -197,7 +197,7 @@ function FormularioOrcamento() {
                             value={inboundMarketing}
                           />
                           <Typography variant="body2" className="colorwhite">
-                            Inbound Marketing
+                            Ecommerce / Plataforma Web
                           </Typography>
                         </Box>
                         <Box className="displayflex">
