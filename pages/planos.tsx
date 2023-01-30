@@ -59,6 +59,9 @@ const Planos: NextPage = () => {
                 width={104}
                 height={104}
               />
+              <Typography className="colorwhite" variant="h3" sx={{ mb: 2 }}>
+                R$ 550,00
+              </Typography>
               <Typography className="colorwhite" variant="body1">
                 Ideal para Profissionais Liberais e Pequenas Empresas com
                 orçamento limitado
@@ -149,6 +152,9 @@ const Planos: NextPage = () => {
                 width={104}
                 height={104}
               />
+              <Typography className="colorwhite" variant="h3" sx={{ mb: 2 }}>
+                R$ 880,00
+              </Typography>
               <Typography className="colorwhite" variant="body1">
                 Ideal para Empresas que entenderam que a Internet é um grande
                 canal de divulgação e querem gerar resultados
@@ -239,6 +245,9 @@ const Planos: NextPage = () => {
                 width={202}
                 height={104}
               />
+              <Typography className="colorwhite" variant="h3" sx={{ mb: 2 }}>
+                R$ 1.380,00
+              </Typography>
               <Typography className="colorwhite" variant="body1">
                 Ideal para Empresas que entenderam que a Internet é um grande
                 canal de divulgação e querem gerar resultados
@@ -863,7 +872,7 @@ const Planos: NextPage = () => {
         </Box>
       </Box>
 
-      <Box className="marginTopG">
+      <Box className="marginTopG" id="orcamento">
         <Box sx={{ textAlign: "center" }}>
           <Typography variant="h4" color="primary">
             <strong>SOLICITE UM ORÇAMENTO</strong>
