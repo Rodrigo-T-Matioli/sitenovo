@@ -4,14 +4,20 @@ import type { NextPage } from "next";
 import Image from "next/image";
 import plataformaDark from "../public/caseevolucao/case-evolucao-treino-plataforma-dark.png";
 import plataformaLight from "../public/caseevolucao/case-evolucao-treino-plataforma.png";
+import mobileDark from "../public/caseevolucao/case-evolucao-treino-posts-dark.png";
+import mobileLight from "../public/caseevolucao/case-evolucao-treino-posts.png";
+import importadosDark from "../public/caseevolucao/case-importados-dark.png";
+import importadosLight from "../public/caseevolucao/case-importados.png";
+import caseSantanderDark from "../public/caseevolucao/case-santander-dark.png";
+import caseSantanderLight from "../public/caseevolucao/case-santander.png";
 import metricasDark from "../public/caseevolucao/cases-metrica-dark.png";
 import metricasLight from "../public/caseevolucao/cases-metrica.png";
-import ResponsiveAppBar from "./navbar";
+import ResponsiveAppBarSec from "./navbarsecondary";
 const EvolucaoTreino: NextPage = () => {
   const theme = useTheme();
   return (
     <div>
-      <ResponsiveAppBar />
+      <ResponsiveAppBarSec />
       <Box
         sx={{
           height: { xs: "400px", lg: "100vh" },
@@ -118,17 +124,15 @@ const EvolucaoTreino: NextPage = () => {
         >
           {theme.palette.mode === "dark" ? (
             <Image
-              src="/caseevolucao/case-evolucao-treino-posts-dark.png"
+              src={mobileDark}
+              className="mobileEvolucao"
               alt="Posts evolução do treino"
-              width={398}
-              height={793}
             />
           ) : (
             <Image
-              src="/caseevolucao/case-evolucao-treino-posts.png"
+              src={mobileLight}
+              className="mobileEvolucao"
               alt="Posts evolução do treino"
-              width={398}
-              height={793}
             />
           )}
         </Box>
@@ -334,17 +338,15 @@ const EvolucaoTreino: NextPage = () => {
               >
                 {theme.palette.mode === "dark" ? (
                   <Image
-                    src="/caseevolucao/case-santander-dark.png"
-                    alt="Posts evolução do treino"
-                    width={386}
-                    height={230}
+                    src={caseSantanderDark}
+                    className="casesInt"
+                    alt="Case Santander"
                   />
                 ) : (
                   <Image
-                    src="/caseevolucao/case-santander.png"
-                    alt="Posts evolução do treino"
-                    width={386}
-                    height={230}
+                    src={caseSantanderLight}
+                    className="casesInt"
+                    alt="Case Santander"
                   />
                 )}
               </Box>
@@ -377,17 +379,15 @@ const EvolucaoTreino: NextPage = () => {
               >
                 {theme.palette.mode === "dark" ? (
                   <Image
-                    src="/caseevolucao/case-importados-dark.png"
-                    alt="Posts evolução do treino"
-                    width={386}
-                    height={230}
+                    src={importadosDark}
+                    className="mobileEvolucao"
+                    alt="Case importados"
                   />
                 ) : (
                   <Image
-                    src="/caseevolucao/case-importados.png"
-                    alt="Posts evolução do treino"
-                    width={386}
-                    height={230}
+                    src={importadosLight}
+                    className="mobileEvolucao"
+                    alt="Case importados"
                   />
                 )}
               </Box>

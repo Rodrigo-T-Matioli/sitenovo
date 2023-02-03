@@ -44,12 +44,15 @@ const Planos: NextPage = () => {
         <Typography color="primary" variant="h6">
           para todos os tamanho de negócios
         </Typography>
+        <Typography color="primary" variant="h4" sx={{ mt: 3 }}>
+          <strong>PLANOS DE PUBLICIDADE</strong>
+        </Typography>
       </Box>
 
       <Box className="containerpuro" sx={{ mt: "-60px" }}>
         <Grid container spacing={2}>
           <Grid item xs={12} md={6} lg={4}>
-            <Box className="planoGoogle">
+            <Box className="planoGeral">
               <Typography className="colorwhite" variant="h5">
                 <strong>GOOGLE ADS</strong>
               </Typography>
@@ -60,7 +63,7 @@ const Planos: NextPage = () => {
                 height={104}
               />
               <Typography className="colorwhite" variant="h3" sx={{ mb: 2 }}>
-                R$ 550,00
+                R$ 650,00
               </Typography>
               <Typography className="colorwhite" variant="body1">
                 Ideal para Profissionais Liberais e Pequenas Empresas com
@@ -70,7 +73,7 @@ const Planos: NextPage = () => {
                 fullWidth
                 variant="contained"
                 size="large"
-                className="btnGoogle"
+                className="btnGeral"
                 sx={{ mt: 3 }}
               >
                 SELECIONAR PLANO
@@ -85,64 +88,64 @@ const Planos: NextPage = () => {
               }}
             >
               <Box sx={{ margin: "auto", display: "flex", p: 0.5 }}>
-                <CheckIcon className="colorGoogle" />
+                <CheckIcon className="colorSocial" />
                 <Typography color="secondary" variant="body2">
                   Gestão da conta de anúncios Google Ads
                 </Typography>
               </Box>
               <Box sx={{ margin: "auto", display: "flex", p: 0.5 }}>
-                <CheckIcon className="colorGoogle" />
+                <CheckIcon className="colorSocial" />
                 <Typography color="secondary" variant="body2">
                   Campanhas Google Shopping
                 </Typography>
               </Box>
               <Box sx={{ margin: "auto", display: "flex", p: 0.5 }}>
-                <CheckIcon className="colorGoogle" />
+                <CheckIcon className="colorSocial" />
                 <Typography color="secondary" variant="body2">
                   Campanhas de remarketing
                 </Typography>
               </Box>
               <Box sx={{ margin: "auto", display: "flex", p: 0.5 }}>
-                <CheckIcon className="colorGoogle" />
+                <CheckIcon className="colorSocial" />
                 <Typography color="secondary" variant="body2">
                   Campanhas em redes de display
                 </Typography>
               </Box>
               <Box sx={{ margin: "auto", display: "flex", p: 0.5 }}>
-                <CheckIcon className="colorGoogle" />
+                <CheckIcon className="colorSocial" />
                 <Typography color="secondary" variant="body2">
                   Copywriting para anúncios
                 </Typography>
               </Box>
               <Box sx={{ margin: "auto", display: "flex", p: 0.5 }}>
-                <CheckIcon className="colorGoogle" />
+                <CheckIcon className="colorSocial" />
                 <Typography color="secondary" variant="body2">
                   Criação das artes para anúncios de display
                 </Typography>
               </Box>
               <Box sx={{ margin: "auto", display: "flex", p: 0.5 }}>
-                <CheckIcon className="colorGoogle" />
+                <CheckIcon className="colorSocial" />
                 <Typography color="secondary" variant="body2">
                   Reuniões de alinhamento estratégico
                 </Typography>
               </Box>
               <Box sx={{ margin: "auto", display: "flex", p: 0.5 }}>
-                <CheckIcon className="colorGoogle" />
+                <CheckIcon className="colorSocial" />
                 <Typography color="secondary" variant="body2">
                   Atendimento e Sucesso do cliente
                 </Typography>
               </Box>
               <Box sx={{ margin: "auto", display: "flex", p: 0.5 }}>
-                <CheckIcon className="colorGoogle" />
+                <CheckIcon className="colorSocial" />
                 <Typography color="secondary" variant="body2">
                   Envio de relatórios estratégicos mensais
                 </Typography>
               </Box>
             </Box>
-            <Box className="planoGoogleRodape"></Box>
+            <Box className="planoGeralRodape"></Box>
           </Grid>
           <Grid item xs={12} md={6} lg={4}>
-            <Box className="planoSocial">
+            <Box className="planoGeral">
               <Typography className="colorwhite" variant="h5">
                 <strong>SOCIAL ADS</strong>
               </Typography>
@@ -153,7 +156,7 @@ const Planos: NextPage = () => {
                 height={104}
               />
               <Typography className="colorwhite" variant="h3" sx={{ mb: 2 }}>
-                R$ 880,00
+                R$ 980,00
               </Typography>
               <Typography className="colorwhite" variant="body1">
                 Ideal para Empresas que entenderam que a Internet é um grande
@@ -163,7 +166,7 @@ const Planos: NextPage = () => {
                 fullWidth
                 variant="contained"
                 size="large"
-                className="btnSocial"
+                className="btnGeral"
                 sx={{ mt: 3 }}
               >
                 SELECIONAR PLANO
@@ -232,10 +235,10 @@ const Planos: NextPage = () => {
                 </Typography>
               </Box>
             </Box>
-            <Box className="planoSocialRodape"></Box>
+            <Box className="planoGeralRodape"></Box>
           </Grid>
           <Grid item xs={12} md={6} lg={4}>
-            <Box className="planoGoogleSocial">
+            <Box className="planoGeral">
               <Typography className="colorwhite" variant="h5">
                 <strong>GOOGLE E SOCIAL ADS</strong>
               </Typography>
@@ -246,7 +249,7 @@ const Planos: NextPage = () => {
                 height={104}
               />
               <Typography className="colorwhite" variant="h3" sx={{ mb: 2 }}>
-                R$ 1.380,00
+                R$ 1.480,00
               </Typography>
               <Typography className="colorwhite" variant="body1">
                 Ideal para Empresas que entenderam que a Internet é um grande
@@ -256,7 +259,7 @@ const Planos: NextPage = () => {
                 fullWidth
                 variant="contained"
                 size="large"
-                className="btnGoogleSocial"
+                className="btnGeral"
                 sx={{ mt: 3 }}
               >
                 SELECIONAR PLANO
@@ -271,79 +274,268 @@ const Planos: NextPage = () => {
               }}
             >
               <Box sx={{ margin: "auto", display: "flex", p: 0.5 }}>
-                <CheckIcon className="colorGoogleSocial" />
+                <CheckIcon className="colorSocial" />
                 <Typography color="secondary" variant="body2">
                   Gestão de anúncios Facebook / Instagram
                 </Typography>
               </Box>
               <Box sx={{ margin: "auto", display: "flex", p: 0.5 }}>
-                <CheckIcon className="colorGoogleSocial" />
+                <CheckIcon className="colorSocial" />
                 <Typography color="secondary" variant="body2">
                   Gestão da conta de anúncios Google Ads
                 </Typography>
               </Box>
               <Box sx={{ margin: "auto", display: "flex", p: 0.5 }}>
-                <CheckIcon className="colorGoogleSocial" />
+                <CheckIcon className="colorSocial" />
                 <Typography color="secondary" variant="body2">
                   Campanhas Google Shopping
                 </Typography>
               </Box>
               <Box sx={{ margin: "auto", display: "flex", p: 0.5 }}>
-                <CheckIcon className="colorGoogleSocial" />
+                <CheckIcon className="colorSocial" />
                 <Typography color="secondary" variant="body2">
                   Campanhas de remarketing
                 </Typography>
               </Box>
               <Box sx={{ margin: "auto", display: "flex", p: 0.5 }}>
-                <CheckIcon className="colorGoogleSocial" />
+                <CheckIcon className="colorSocial" />
                 <Typography color="secondary" variant="body2">
                   Campanhas do google display
                 </Typography>
               </Box>
               <Box sx={{ margin: "auto", display: "flex", p: 0.5 }}>
-                <CheckIcon className="colorGoogleSocial" />
+                <CheckIcon className="colorSocial" />
                 <Typography color="secondary" variant="body2">
                   Criação das artes para veiculação dos anúncios
                 </Typography>
               </Box>
               <Box sx={{ margin: "auto", display: "flex", p: 0.5 }}>
-                <CheckIcon className="colorGoogleSocial" />
+                <CheckIcon className="colorSocial" />
                 <Typography color="secondary" variant="body2">
                   Criação de copywriting para anúncios
                 </Typography>
               </Box>
               <Box sx={{ margin: "auto", display: "flex", p: 0.5 }}>
-                <CheckIcon className="colorGoogleSocial" />
+                <CheckIcon className="colorSocial" />
                 <Typography color="secondary" variant="body2">
                   Atração de novos seguidores
                 </Typography>
               </Box>
               <Box sx={{ margin: "auto", display: "flex", p: 0.5 }}>
-                <CheckIcon className="colorGoogleSocial" />
+                <CheckIcon className="colorSocial" />
                 <Typography color="secondary" variant="body2">
                   Envio de relatórios estratégicos mensais
                 </Typography>
               </Box>
               <Box sx={{ margin: "auto", display: "flex", p: 0.5 }}>
-                <CheckIcon className="colorGoogleSocial" />
+                <CheckIcon className="colorSocial" />
                 <Typography color="secondary" variant="body2">
                   Reuniões mensais de alinhamento estratégico
                 </Typography>
               </Box>
               <Box sx={{ margin: "auto", display: "flex", p: 0.5 }}>
-                <CheckIcon className="colorGoogleSocial" />
+                <CheckIcon className="colorSocial" />
                 <Typography color="secondary" variant="body2">
                   Atendimento e Sucesso do cliente
                 </Typography>
               </Box>
               <Box sx={{ margin: "auto", display: "flex", p: 0.5 }}>
-                <CheckIcon className="colorGoogleSocial" />
+                <CheckIcon className="colorSocial" />
                 <Typography color="secondary" variant="body2">
                   Gestão de investimentos e, mídia
                 </Typography>
               </Box>
             </Box>
-            <Box className="planoGoogleSocialRodape"></Box>
+            <Box className="planoGeralRodape"></Box>
+          </Grid>
+        </Grid>
+      </Box>
+
+      <Box
+        sx={{
+          height: 350,
+          background: theme.palette.mode === "dark" ? "#1e1e1e" : "#f1f1f1",
+          mt: "-150px",
+        }}
+      ></Box>
+
+      <Box sx={{ textAlign: "center", paddingBottom: "90px", mt: "-150px" }}>
+        <Typography color="primary" variant="h4">
+          <strong>PLANOS DE CONTEÚDO PARA INSTAGRAM</strong>
+        </Typography>
+      </Box>
+
+      <Box className="containerpuro" sx={{ mt: "-60px" }}>
+        <Grid container spacing={2}>
+          <Grid item xs={12} md={6} lg={4}>
+            <Box className="planoGeral">
+              <Typography className="colorwhite" variant="h5">
+                <strong>ARTE</strong>
+              </Typography>
+              <img
+                src="icon-google-ads.png"
+                alt="Icone Google Ads"
+                width={104}
+                height={104}
+              />
+              <Typography className="colorwhite" variant="h3" sx={{ mb: 2 }}>
+                R$ 430,00
+              </Typography>
+              <Typography className="colorwhite" variant="body1">
+                Ideal para Profissionais Liberais e Pequenas Empresas que façam
+                o planejamento de conteúdo.
+              </Typography>
+              <Button
+                fullWidth
+                variant="contained"
+                size="large"
+                className="btnGeral"
+                sx={{ mt: 3 }}
+              >
+                SELECIONAR PLANO
+              </Button>
+            </Box>
+            <Box
+              className="boxPlanos"
+              sx={{
+                display: "grid",
+                paddingTop: "20px",
+                paddingBottom: "20px",
+              }}
+            >
+              <Box sx={{ margin: "auto", display: "flex", p: 0.5 }}>
+                <CheckIcon className="colorSocial" />
+                <Typography color="secondary" variant="body2">
+                  10 Posts / mês
+                </Typography>
+              </Box>
+              <Box sx={{ margin: "auto", display: "flex", p: 0.5 }}>
+                <CheckIcon className="colorSocial" />
+                <Typography color="secondary" variant="body2">
+                  10 Storie do mesmo post / mês
+                </Typography>
+              </Box>
+              <Box sx={{ margin: "auto", display: "flex", p: 0.5 }}>
+                <CheckIcon className="colorSocial" />
+                <Typography color="secondary" variant="body2">
+                  Apenas arte
+                </Typography>
+              </Box>
+            </Box>
+            <Box className="planoGeralRodape"></Box>
+          </Grid>
+          <Grid item xs={12} md={6} lg={4}>
+            <Box className="planoGeral">
+              <Typography className="colorwhite" variant="h5">
+                <strong>ARTE E CONTEÚDO</strong>
+              </Typography>
+              <img
+                src="icon-social-ads.png"
+                alt="Icone Social Ads"
+                width={104}
+                height={104}
+              />
+              <Typography className="colorwhite" variant="h3" sx={{ mb: 2 }}>
+                R$ 580,00
+              </Typography>
+              <Typography className="colorwhite" variant="body1">
+                Ideal para Empresas que precisam de um planejamento mensal de
+                todo o conteúdo e arte.
+              </Typography>
+              <Button
+                fullWidth
+                variant="contained"
+                size="large"
+                className="btnGeral"
+                sx={{ mt: 3 }}
+              >
+                SELECIONAR PLANO
+              </Button>
+            </Box>
+            <Box
+              className="boxPlanos"
+              sx={{
+                display: "grid",
+                paddingTop: "20px",
+                paddingBottom: "20px",
+              }}
+            >
+              <Box sx={{ margin: "auto", display: "flex", p: 0.5 }}>
+                <CheckIcon className="colorSocial" />
+                <Typography color="secondary" variant="body2">
+                  10 post / mês
+                </Typography>
+              </Box>
+              <Box sx={{ margin: "auto", display: "flex", p: 0.5 }}>
+                <CheckIcon className="colorSocial" />
+                <Typography color="secondary" variant="body2">
+                  10 Storie do mesmo post / mês
+                </Typography>
+              </Box>
+              <Box sx={{ margin: "auto", display: "flex", p: 0.5 }}>
+                <CheckIcon className="colorSocial" />
+                <Typography color="secondary" variant="body2">
+                  Planejamento + arte + Conteúdo
+                </Typography>
+              </Box>
+            </Box>
+            <Box className="planoGeralRodape"></Box>
+          </Grid>
+          <Grid item xs={12} md={6} lg={4}>
+            <Box className="planoGeral">
+              <Typography className="colorwhite" variant="h5">
+                <strong>ARTE E CONTEÚDO MAX</strong>
+              </Typography>
+              <img
+                src="icon-social-google-ads.png"
+                alt="Icone Social e Google Ads"
+                width={202}
+                height={104}
+              />
+              <Typography className="colorwhite" variant="h3" sx={{ mb: 2 }}>
+                R$ 810,00
+              </Typography>
+              <Typography className="colorwhite" variant="body1">
+                Ideal para Empresas que precisam de um volume maior de postagens
+              </Typography>
+              <Button
+                fullWidth
+                variant="contained"
+                size="large"
+                className="btnGeral"
+                sx={{ mt: 3 }}
+              >
+                SELECIONAR PLANO
+              </Button>
+            </Box>
+            <Box
+              className="boxPlanos"
+              sx={{
+                display: "grid",
+                paddingTop: "20px",
+                paddingBottom: "20px",
+              }}
+            >
+              <Box sx={{ margin: "auto", display: "flex", p: 0.5 }}>
+                <CheckIcon className="colorSocial" />
+                <Typography color="secondary" variant="body2">
+                  16 post / mês
+                </Typography>
+              </Box>
+              <Box sx={{ margin: "auto", display: "flex", p: 0.5 }}>
+                <CheckIcon className="colorSocial" />
+                <Typography color="secondary" variant="body2">
+                  16 Storie do mesmo post / mês
+                </Typography>
+              </Box>
+              <Box sx={{ margin: "auto", display: "flex", p: 0.5 }}>
+                <CheckIcon className="colorSocial" />
+                <Typography color="secondary" variant="body2">
+                  Planejamento + arte + Conteúdo
+                </Typography>
+              </Box>
+            </Box>
+            <Box className="planoGeralRodape"></Box>
           </Grid>
         </Grid>
       </Box>
@@ -391,7 +583,7 @@ const Planos: NextPage = () => {
                 <Typography variant="h6" color="primary">
                   <strong>GOOGLE ADS</strong>
                 </Typography>
-                <Typography variant="body2" color="primary">
+                <Typography variant="body2">
                   Seja encontrado por quem realmente está buscando pelo seus
                   produtos ou serviços.
                 </Typography>
@@ -424,7 +616,7 @@ const Planos: NextPage = () => {
                 <Typography variant="h6" color="primary">
                   <strong>FACEBOOK / INSTAGRAM ADS</strong>
                 </Typography>
-                <Typography variant="body2" color="primary">
+                <Typography variant="body2">
                   Promova seus posts. Conquiste mais fãs. Alcance milhares de
                   potenciais clientes!
                 </Typography>
@@ -457,7 +649,7 @@ const Planos: NextPage = () => {
                 <Typography variant="h6" color="primary">
                   <strong>LINKEDIN ADS</strong>
                 </Typography>
-                <Typography variant="body2" color="primary">
+                <Typography variant="body2">
                   Tráfego super qualificado para falar com quem realmente
                   decide.
                 </Typography>
@@ -490,7 +682,7 @@ const Planos: NextPage = () => {
                 <Typography variant="h6" color="primary">
                   <strong>WEBSITES PERSONALIZADOS</strong>
                 </Typography>
-                <Typography variant="body2" color="primary">
+                <Typography variant="body2">
                   Sua empresa merece um site profissional. E que converta
                   visitantes em vendas.
                 </Typography>
@@ -523,7 +715,7 @@ const Planos: NextPage = () => {
                 <Typography variant="h6" color="primary">
                   <strong>LANDING PAGE</strong>
                 </Typography>
-                <Typography variant="body2" color="primary">
+                <Typography variant="body2">
                   Crie páginas específicas para um determinado produto ou
                   serviço, com foco em conversão.
                 </Typography>
@@ -556,7 +748,7 @@ const Planos: NextPage = () => {
                 <Typography variant="h6" color="primary">
                   <strong>CRIAÇÃO DE BLOG</strong>
                 </Typography>
-                <Typography variant="body2" color="primary">
+                <Typography variant="body2">
                   Criamos blogs pessoais ou profissionais para empreendedores
                   que desejam gerar conteúdo para a internet.
                 </Typography>
@@ -589,7 +781,7 @@ const Planos: NextPage = () => {
                 <Typography variant="h6" color="primary">
                   <strong>GESTÃO DE INSTAGRAM</strong>
                 </Typography>
-                <Typography variant="body2" color="primary">
+                <Typography variant="body2">
                   Utilize as postagens no Instagram para trazer resultados
                   incríveis para sua empresa.
                 </Typography>
@@ -622,7 +814,7 @@ const Planos: NextPage = () => {
                 <Typography variant="h6" color="primary">
                   <strong>GESTÃO DE FACEBOOK</strong>
                 </Typography>
-                <Typography variant="body2" color="primary">
+                <Typography variant="body2">
                   Que tal usar o Facebook para trazer resultados impressionantes
                   para sua empresa?
                 </Typography>
@@ -655,7 +847,7 @@ const Planos: NextPage = () => {
                 <Typography variant="h6" color="primary">
                   <strong>INFO PRODUTORES</strong>
                 </Typography>
-                <Typography variant="body2" color="primary">
+                <Typography variant="body2">
                   Te ajudamos com o tráfego de clientes para o lançamento dos
                   seus produtos digitais.
                 </Typography>
