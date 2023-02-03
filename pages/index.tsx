@@ -7,10 +7,12 @@ import Typography from "@mui/material/Typography";
 import "glider-js/glider.min.css";
 import type { NextPage } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import Glider from "react-glider";
 import profilePic from "../public/funil-de-vendas.jpg";
 import mapaBlabkDark from "../public/mapa-blackfishdigital-dark.png";
 import mapaBlabk from "../public/mapa-blackfishdigital.jpg";
+import SantanderCase from "../public/santander-home-blackfishdigital.png";
 import FormularioOrcamento from "./formulario";
 import ResponsiveAppBar from "./navbar";
 
@@ -43,28 +45,32 @@ const Home: NextPage = () => {
           <Typography color="secondary.light" variant="h2">
             COM FOCO EM VENDAS.
           </Typography>
-          <Button
-            variant="contained"
-            size="large"
-            className="btnbranco"
-            sx={{ mt: 3 }}
-          >
-            Orçamento
-          </Button>
+          <Link href="#orcamento" rel="noopener noreferrer">
+            <Button
+              variant="contained"
+              size="large"
+              className="btnbranco"
+              sx={{ mt: 3 }}
+            >
+              Orçamento
+            </Button>
+          </Link>
           <Box>
-            <IconButton color="primary" sx={{ mt: 4 }}>
-              <KeyboardArrowDownIcon
-                sx={{ fontSize: 60 }}
-                className="colorwhite"
-              />
-            </IconButton>
+            <Link href="#solucoes" rel="noopener noreferrer">
+              <IconButton color="primary" sx={{ mt: 4 }}>
+                <KeyboardArrowDownIcon
+                  sx={{ fontSize: 60 }}
+                  className="colorwhite"
+                />
+              </IconButton>
+            </Link>
           </Box>
         </Box>
       </Box>
 
       <Box className="bgroxo" sx={{ height: "30px" }}></Box>
 
-      <Box className="containerpuro paddingTopG">
+      <Box className="containerpuro paddingTopG" id="solucoes">
         <Grid container spacing={2}>
           <Grid item xs={12} md={12} lg={6}>
             <Typography color="primary" variant="h3">
@@ -265,14 +271,16 @@ const Home: NextPage = () => {
                 Veja como a consultória bateu seu record de vendas e faturou
                 mais de R$ 500 mil em vendas, só com marketing digital:
               </Typography>
-              <Button
-                variant="contained"
-                size="large"
-                className="btnpadrao"
-                sx={{ mt: 3 }}
-              >
-                Ver case
-              </Button>
+              <Link href="/evolucaodotreino" rel="noopener noreferrer">
+                <Button
+                  variant="contained"
+                  size="large"
+                  className="btnpadrao"
+                  sx={{ mt: 3 }}
+                >
+                  Ver case
+                </Button>
+              </Link>
             </Box>
           </Grid>
         </Grid>
@@ -280,6 +288,23 @@ const Home: NextPage = () => {
 
       <Box className="home-case2">
         <Grid container spacing={2}>
+          <Grid
+            item
+            xs={12}
+            md={6}
+            sx={{
+              display: { xs: "block", md: "none" },
+              textAlign: "center",
+              position: "relative",
+            }}
+            className="bgroxo homeEvolucao"
+          >
+            <Image
+              src={SantanderCase}
+              alt="Santander e Black Fish Digital"
+              className="homeImgCase"
+            />
+          </Grid>
           <Grid
             item
             xs={12}
@@ -297,14 +322,16 @@ const Home: NextPage = () => {
                 Temos uma equipe de designers, programadores e conteúdo digital
                 qualificadas para criar o produto digital que precisa.
               </Typography>
-              <Button
-                variant="contained"
-                size="large"
-                className="btnpadrao"
-                sx={{ mt: 3 }}
-              >
-                Ver case
-              </Button>
+              <Link href="/santander" rel="noopener noreferrer">
+                <Button
+                  variant="contained"
+                  size="large"
+                  className="btnpadrao"
+                  sx={{ mt: 3 }}
+                >
+                  Ver case
+                </Button>
+              </Link>
             </Box>
           </Grid>
           <Grid
@@ -312,16 +339,15 @@ const Home: NextPage = () => {
             xs={12}
             md={6}
             sx={{
+              display: { xs: "none", md: "block" },
               textAlign: "center",
               position: "relative",
             }}
             className="bgroxo homeEvolucao"
           >
             <Image
-              src="/santander-home-blackfishdigital.png"
+              src={SantanderCase}
               alt="Santander e Black Fish Digital"
-              width={523}
-              height={333}
               className="homeImgCase"
             />
           </Grid>
@@ -350,14 +376,20 @@ const Home: NextPage = () => {
             Sua empresa deve ser guiada por dados e não por “achismo” e nós te
             ajudaremos com isso!
           </Typography>
-          <Button
-            variant="contained"
-            size="large"
-            className="btnpadrao"
-            sx={{ mt: 3 }}
+          <Link
+            href="https://wa.me/5511969203819?text=Olá,%20quero%20estruturar%20o%20processo%20de%20vendas%20da%20minha%20empresa!"
+            rel="noopener noreferrer"
+            target="_blank"
           >
-            Ver case
-          </Button>
+            <Button
+              variant="contained"
+              size="large"
+              className="btnpadrao"
+              sx={{ mt: 3 }}
+            >
+              Fale conosco
+            </Button>
+          </Link>
         </Box>
         <Box sx={{ display: { xs: "none", lg: "block" } }}>
           <Image

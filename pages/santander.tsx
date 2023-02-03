@@ -2,8 +2,7 @@ import { Box, Grid, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import type { NextPage } from "next";
 import Image from "next/image";
-import importadosDark from "../public/caseevolucao/case-importados-dark.png";
-import importadosLight from "../public/caseevolucao/case-importados.png";
+import Link from "next/link";
 import caseEvolucaoDark from "../public/casesantander/case-evolucao-do-treino-dark.png";
 import caseEvolucaoLight from "../public/casesantander/case-evolucao-do-treino.png";
 import plataformaDark from "../public/casesantander/case-santander-plataforma-dark.png";
@@ -11,6 +10,7 @@ import plataformaLight from "../public/casesantander/case-santander-plataforma.p
 import siteExplicandoLight from "../public/casesantander/case-santander-siteexplicando-1.png";
 import siteExplicandoLight2 from "../public/casesantander/case-santander-siteexplicando-2.png";
 import siteExplicandoLight3 from "../public/casesantander/case-santander-siteexplicando-3.png";
+import FormularioOrcamento from "./formulario";
 import ResponsiveAppBarSec from "./navbarsecondary";
 const Satander: NextPage = () => {
   const theme = useTheme();
@@ -157,7 +157,7 @@ const Satander: NextPage = () => {
           <Box className="displayflexwrap">
             <Box
               sx={{
-                width: { xs: "100%", lg: "45%" },
+                width: { xs: "100%", lg: "100%" },
               }}
             >
               <Box
@@ -174,21 +174,26 @@ const Satander: NextPage = () => {
                   p: 0,
                 }}
               >
-                {theme.palette.mode === "dark" ? (
-                  <Image
-                    src={caseEvolucaoDark}
-                    className="casesInt"
-                    alt="Case Santander"
-                  />
-                ) : (
-                  <Image
-                    src={caseEvolucaoLight}
-                    className="casesInt"
-                    alt="Case Santander"
-                  />
-                )}
+                <Link href="/evolucaodotreino" rel="noopener noreferrer">
+                  {theme.palette.mode === "dark" ? (
+                    <Image
+                      src={caseEvolucaoDark}
+                      className="casesInt"
+                      alt="Case Santander"
+                    />
+                  ) : (
+                    <Image
+                      src={caseEvolucaoLight}
+                      className="casesInt"
+                      alt="Case Santander"
+                    />
+                  )}
+                </Link>
               </Box>
-              <Typography variant="h5" sx={{ fontWeight: 700, mb: 1 }}>
+              <Typography
+                variant="h5"
+                sx={{ fontWeight: 700, mb: 1, textDecoration: "none" }}
+              >
                 EVOLUÇÃO DO TREINO
               </Typography>
               <Typography variant="body1">
@@ -196,7 +201,7 @@ const Satander: NextPage = () => {
                 mais de R$ 500 mil em vendas, só com marketing digital
               </Typography>
             </Box>
-            <Box
+            {/* <Box
               sx={{
                 width: { xs: "100%", lg: "45%" },
               }}
@@ -236,9 +241,18 @@ const Satander: NextPage = () => {
                 Como em 6 meses conseguimos chegar no resultado obtido apenas
                 com um produto que foi sensação no mercado.
               </Typography>
-            </Box>
+            </Box> */}
           </Box>
         </Box>
+      </Box>
+
+      <Box className="marginTopG" id="orcamento">
+        <Box sx={{ textAlign: "center" }}>
+          <Typography variant="h4" color="primary">
+            <strong>SOLICITE UM ORÇAMENTO</strong>
+          </Typography>
+        </Box>
+        <FormularioOrcamento />
       </Box>
 
       <Box sx={{ py: 2 }} className="copyright">

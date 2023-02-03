@@ -170,8 +170,8 @@ export const ColorModeProvider = ({ children }: ColorModeProps) => {
                     ".homeImgCase": {
                       position: "absolute",
                       bottom: 0,
-                      left: "30%",
-                      ["@media (max-width:1200px)"]: {
+                      left: "calc(100% - 80%)",
+                      ["@media (max-width:1180px)"]: {
                         left: "5%",
                       },
                       ["@media (max-width:900px)"]: {
@@ -397,6 +397,15 @@ export const ColorModeProvider = ({ children }: ColorModeProps) => {
                       position: "absolute",
                       bottom: "-122px",
                       right: "0px",
+                      ["@media (max-width:900px)"]: {
+                        position: "relative",
+                        bottom: "auto",
+                        right: "auto",
+                      },
+                      ["@media (max-width:550px)"]: {
+                        width: "100%",
+                        height: "auto",
+                      },
                     },
                     ".casesImportados": {
                       position: "absolute",
@@ -404,10 +413,19 @@ export const ColorModeProvider = ({ children }: ColorModeProps) => {
                       left: "calc(100% - 70%)",
                     },
                     ".case-home-txt": {
-                      width: "590px",
+                      width: "100%",
                     },
                     ".home-case2": {
                       padding: "16px !important",
+                      ["@media (max-width:900px)"]: {
+                        padding: "0px !important",
+                      },
+                    },
+                    ".santaderCases": {
+                      ["@media (max-width:1200px)"]: {
+                        width: "100%",
+                        height: "auto",
+                      },
                     },
                     ".corverde": {
                       color: "#5bb74c",
@@ -489,6 +507,14 @@ export const ColorModeProvider = ({ children }: ColorModeProps) => {
                         width: "100%",
                         height: "auto",
                         margin: "auto",
+                      },
+                    },
+                    ".txtRodape": {
+                      ["@media (max-width:550px)"]: {
+                        fontSize: "14px !important",
+                      },
+                      ["@media (max-width:350px)"]: {
+                        fontSize: "12px !important",
                       },
                     },
                   },
@@ -622,8 +648,8 @@ export const ColorModeProvider = ({ children }: ColorModeProps) => {
                     ".homeImgCase": {
                       position: "absolute",
                       bottom: 0,
-                      left: "30%",
-                      ["@media (max-width:1200px)"]: {
+                      left: "calc(100% - 80%)",
+                      ["@media (max-width:1180px)"]: {
                         left: "5%",
                       },
                       ["@media (max-width:900px)"]: {
@@ -834,6 +860,15 @@ export const ColorModeProvider = ({ children }: ColorModeProps) => {
                       position: "absolute",
                       bottom: "-122px",
                       right: "0px",
+                      ["@media (max-width:900px)"]: {
+                        position: "relative",
+                        bottom: "auto",
+                        right: "auto",
+                      },
+                      ["@media (max-width:550px)"]: {
+                        width: "100%",
+                        height: "auto",
+                      },
                     },
                     ".casesImportados": {
                       position: "absolute",
@@ -841,10 +876,19 @@ export const ColorModeProvider = ({ children }: ColorModeProps) => {
                       left: "calc(100% - 70%)",
                     },
                     ".case-home-txt": {
-                      width: "590px",
+                      width: "100%",
                     },
                     ".home-case2": {
                       padding: "16px !important",
+                      ["@media (max-width:900px)"]: {
+                        padding: "0px !important",
+                      },
+                    },
+                    ".santaderCases": {
+                      ["@media (max-width:1200px)"]: {
+                        width: "100%",
+                        height: "auto",
+                      },
                     },
                     ".corverde": {
                       color: "#ffffff",
