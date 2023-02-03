@@ -280,6 +280,22 @@ export const ColorModeProvider = ({ children }: ColorModeProps) => {
                         height: "auto",
                       },
                     },
+                    ".planoGeral": {
+                      backgroundColor: "#3d1241",
+                      textAlign: "center",
+                      padding: "20px",
+                      borderTopLeftRadius: "30px",
+                      borderTopRightRadius: "30px",
+                    },
+                    ".btnGeral": {
+                      backgroundColor: "#771181 !important",
+                    },
+                    ".planoGeralRodape": {
+                      backgroundColor: "#3d1241",
+                      padding: "10px",
+                      borderBottomLeftRadius: "30px",
+                      borderBottomRightRadius: "30px",
+                    },
                     ".planoGoogle": {
                       backgroundColor: "#79c7e1",
                       textAlign: "center",
@@ -291,7 +307,7 @@ export const ColorModeProvider = ({ children }: ColorModeProps) => {
                       backgroundColor: "#69b8d3 !important",
                     },
                     ".boxPlanos": {
-                      backgroundColor: "#f2f1f1",
+                      backgroundColor: "#f6f6f6",
                       textAling: "center !important",
                       width: "100%",
                     },
@@ -339,6 +355,22 @@ export const ColorModeProvider = ({ children }: ColorModeProps) => {
                       borderBottomLeftRadius: "30px",
                       borderBottomRightRadius: "30px",
                     },
+                    ".planoConteudoArte": {
+                      backgroundColor: "#e1897b",
+                      textAlign: "center",
+                      padding: "20px",
+                      borderTopLeftRadius: "30px",
+                      borderTopRightRadius: "30px",
+                    },
+                    ".btnConteudoArte": {
+                      backgroundColor: "#c97466 !important",
+                    },
+                    ".planoConteudoArteRodape": {
+                      backgroundColor: "#e1897b",
+                      padding: "10px",
+                      borderBottomLeftRadius: "30px",
+                      borderBottomRightRadius: "30px",
+                    },
                     ".colorGoogleSocial": {
                       color: "#9cc480",
                     },
@@ -379,6 +411,9 @@ export const ColorModeProvider = ({ children }: ColorModeProps) => {
                     },
                     ".corverde": {
                       color: "#5bb74c",
+                    },
+                    ".corrosa": {
+                      color: "#c37fb6",
                     },
                     ".positionRelative": {
                       position: "relative",
@@ -441,6 +476,19 @@ export const ColorModeProvider = ({ children }: ColorModeProps) => {
                       ["@media (max-width:1050px)"]: {
                         width: "80%",
                         height: "auto",
+                      },
+                    },
+                    ".mobileEvolucao": {
+                      ["@media (max-width:900px)"]: {
+                        width: "80%",
+                        margin: "auto",
+                      },
+                    },
+                    ".casesInt": {
+                      ["@media (max-width:740px)"]: {
+                        width: "100%",
+                        height: "auto",
+                        margin: "auto",
                       },
                     },
                   },
@@ -685,6 +733,22 @@ export const ColorModeProvider = ({ children }: ColorModeProps) => {
                         height: "auto",
                       },
                     },
+                    ".planoGeral": {
+                      backgroundColor: "#3f3f3f",
+                      textAlign: "center",
+                      padding: "20px",
+                      borderTopLeftRadius: "30px",
+                      borderTopRightRadius: "30px",
+                    },
+                    ".btnGeral": {
+                      backgroundColor: "#363636 !important",
+                    },
+                    ".planoGeralRodape": {
+                      backgroundColor: "#3f3f3f",
+                      padding: "10px",
+                      borderBottomLeftRadius: "30px",
+                      borderBottomRightRadius: "30px",
+                    },
                     ".planoGoogle": {
                       backgroundColor: "#3f3f3f",
                       textAlign: "center",
@@ -785,6 +849,9 @@ export const ColorModeProvider = ({ children }: ColorModeProps) => {
                     ".corverde": {
                       color: "#ffffff",
                     },
+                    ".corrosa": {
+                      color: "#ffffff",
+                    },
                     ".positionRelative": {
                       position: "relative",
                     },
@@ -846,6 +913,19 @@ export const ColorModeProvider = ({ children }: ColorModeProps) => {
                       ["@media (max-width:1050px)"]: {
                         width: "80%",
                         height: "auto",
+                      },
+                    },
+                    ".mobileEvolucao": {
+                      ["@media (max-width:900px)"]: {
+                        width: "80%",
+                        margin: "auto",
+                      },
+                    },
+                    ".casesInt": {
+                      ["@media (max-width:740px)"]: {
+                        width: "100%",
+                        height: "auto",
+                        margin: "auto",
                       },
                     },
                   },

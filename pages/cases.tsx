@@ -138,6 +138,7 @@ const Cases: NextPage = () => {
                   size="large"
                   className="btnbrancovermelho"
                   sx={{ mt: 3 }}
+                  onClick={() => LinkMenu("/santander")}
                 >
                   <strong>Ver case</strong>
                 </Button>
