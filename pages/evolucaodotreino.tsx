@@ -2,16 +2,16 @@ import { Box, Button, Grid, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import type { NextPage } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import plataformaDark from "../public/caseevolucao/case-evolucao-treino-plataforma-dark.png";
 import plataformaLight from "../public/caseevolucao/case-evolucao-treino-plataforma.png";
 import mobileDark from "../public/caseevolucao/case-evolucao-treino-posts-dark.png";
 import mobileLight from "../public/caseevolucao/case-evolucao-treino-posts.png";
-import importadosDark from "../public/caseevolucao/case-importados-dark.png";
-import importadosLight from "../public/caseevolucao/case-importados.png";
 import caseSantanderDark from "../public/caseevolucao/case-santander-dark.png";
 import caseSantanderLight from "../public/caseevolucao/case-santander.png";
 import metricasDark from "../public/caseevolucao/cases-metrica-dark.png";
 import metricasLight from "../public/caseevolucao/cases-metrica.png";
+import FormularioOrcamento from "./formulario";
 import ResponsiveAppBarSec from "./navbarsecondary";
 const EvolucaoTreino: NextPage = () => {
   const theme = useTheme();
@@ -319,7 +319,7 @@ const EvolucaoTreino: NextPage = () => {
           <Box className="displayflexwrap">
             <Box
               sx={{
-                width: { xs: "100%", lg: "45%" },
+                width: { xs: "100%", lg: "100%" },
               }}
             >
               <Box
@@ -336,19 +336,21 @@ const EvolucaoTreino: NextPage = () => {
                   p: 0,
                 }}
               >
-                {theme.palette.mode === "dark" ? (
-                  <Image
-                    src={caseSantanderDark}
-                    className="casesInt"
-                    alt="Case Santander"
-                  />
-                ) : (
-                  <Image
-                    src={caseSantanderLight}
-                    className="casesInt"
-                    alt="Case Santander"
-                  />
-                )}
+                <Link href="/santander" rel="noopener noreferrer">
+                  {theme.palette.mode === "dark" ? (
+                    <Image
+                      src={caseSantanderDark}
+                      className="casesInt"
+                      alt="Case Santander"
+                    />
+                  ) : (
+                    <Image
+                      src={caseSantanderLight}
+                      className="casesInt"
+                      alt="Case Santander"
+                    />
+                  )}
+                </Link>
               </Box>
               <Typography variant="h5" sx={{ fontWeight: 700, mb: 1 }}>
                 SANTANDER
@@ -358,7 +360,7 @@ const EvolucaoTreino: NextPage = () => {
                 qualificadas para criar o produto digital que precisa.
               </Typography>
             </Box>
-            <Box
+            {/* <Box
               sx={{
                 width: { xs: "100%", lg: "45%" },
               }}
@@ -398,9 +400,18 @@ const EvolucaoTreino: NextPage = () => {
                 Como em 6 meses conseguimos chegar no resultado obtido apenas
                 com um produto que foi sensação no mercado.
               </Typography>
-            </Box>
+            </Box> */}
           </Box>
         </Box>
+      </Box>
+
+      <Box className="marginTopG" id="orcamento">
+        <Box sx={{ textAlign: "center" }}>
+          <Typography variant="h4" color="primary">
+            <strong>SOLICITE UM ORÇAMENTO</strong>
+          </Typography>
+        </Box>
+        <FormularioOrcamento />
       </Box>
 
       <Box sx={{ py: 2 }} className="copyright">

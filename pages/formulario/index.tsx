@@ -302,19 +302,19 @@ function FormularioOrcamento() {
                   <Box sx={{ margin: "auto", p: 2 }}>
                     <Typography
                       variant="h3"
-                      className="colorwhite"
+                      className="colorwhite txtRodape"
                       sx={{ mt: 1 }}
                     >
                       (11) 9 6920-3819
                     </Typography>
                     <Typography
                       variant="h6"
-                      className="colorwhite"
+                      className="colorwhite txtRodape"
                       sx={{ mt: 4 }}
                     >
                       Rua José de Oliveira, 270, Sorocaba
                     </Typography>
-                    <Typography variant="h6" className="colorwhite">
+                    <Typography variant="h6" className="colorwhite txtRodape">
                       <strong>rodrigo@blackfishdigital.com.br</strong>
                     </Typography>
                   </Box>

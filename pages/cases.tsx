@@ -5,7 +5,6 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import Glider from "react-glider";
 import evolucaoTreino from "../public/evolucao-do-treino-cases.png";
-import importados from "../public/importados-cases.png";
 import santander from "../public/santander-cases-blackfishdigital.png";
 import FormularioOrcamento from "./formulario";
 import ResponsiveAppBar from "./navbar";
@@ -54,6 +53,22 @@ const Cases: NextPage = () => {
       >
         <Box className="containerpuro">
           <Grid container spacing={2} sx={{ pt: 9, pb: 16 }}>
+            <Grid
+              item
+              xs={12}
+              md={6}
+              sx={{
+                position: "relative",
+                display: { xs: "block", md: "none" },
+                textAlign: "center",
+              }}
+            >
+              <Image
+                src={evolucaoTreino}
+                alt="Case Evolução do Treino Black Fish Digital"
+                className="casesEvolucao"
+              />
+            </Grid>
             <Grid item xs={12} md={6}>
               <Typography variant="h6" className="colorwhite">
                 CONHEÇA O CASE <strong>EVOLUÇÃO DO TREINO</strong>
@@ -75,7 +90,15 @@ const Cases: NextPage = () => {
                 <strong>Ver case</strong>
               </Button>
             </Grid>
-            <Grid item xs={12} md={6} sx={{ position: "relative" }}>
+            <Grid
+              item
+              xs={12}
+              md={6}
+              sx={{
+                position: "relative",
+                display: { xs: "none", md: "block" },
+              }}
+            >
               <Image
                 src={evolucaoTreino}
                 alt="Case Evolução do Treino Black Fish Digital"
@@ -110,7 +133,11 @@ const Cases: NextPage = () => {
         <Box className="containerpuro">
           <Grid container spacing={2} sx={{ py: 9 }}>
             <Grid item xs={12} md={6} sx={{ position: "relative" }}>
-              <Image src={santander} alt="Case Satander Black Fish Digital" />
+              <Image
+                src={santander}
+                alt="Case Satander Black Fish Digital"
+                className="santaderCases"
+              />
             </Grid>
             <Grid
               item
@@ -148,7 +175,7 @@ const Cases: NextPage = () => {
         </Box>
       </Box>
 
-      <Box
+      {/* <Box
         sx={{
           backgroundImage:
             theme.palette.mode === "dark"
@@ -200,7 +227,7 @@ const Cases: NextPage = () => {
             </Grid>
           </Grid>
         </Box>
-      </Box>
+      </Box> */}
 
       <Box className="homeBgCinza paddingG">
         <Box className="containerpuro" sx={{ textAlign: "center" }}>

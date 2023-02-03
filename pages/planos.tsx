@@ -8,6 +8,8 @@ import { useTheme } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
 import type { NextPage } from "next";
 import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/router";
 import React from "react";
 import Glider from "react-glider";
 import FormularioOrcamento from "./formulario";
@@ -20,6 +22,10 @@ const Planos: NextPage = () => {
     (panel: string) => (event: React.SyntheticEvent, isExpanded: boolean) => {
       setExpanded(isExpanded ? panel : false);
     };
+  const router = useRouter();
+  const LinkMenu = (link: string) => {
+    router.push(`${link}`);
+  };
   return (
     <div>
       <ResponsiveAppBar />
@@ -69,15 +75,21 @@ const Planos: NextPage = () => {
                 Ideal para Profissionais Liberais e Pequenas Empresas com
                 orçamento limitado
               </Typography>
-              <Button
-                fullWidth
-                variant="contained"
-                size="large"
-                className="btnGeral"
-                sx={{ mt: 3 }}
+              <Link
+                href="https://wa.me/5511969203819?text=Olá,%20quero%20contratar%20ou%20saber%20mais%20sobre%20o%20plano%20GOOGLE%20ADS!"
+                rel="noopener noreferrer"
+                target="_blank"
               >
-                SELECIONAR PLANO
-              </Button>
+                <Button
+                  fullWidth
+                  variant="contained"
+                  size="large"
+                  className="btnGeral"
+                  sx={{ mt: 3 }}
+                >
+                  SELECIONAR PLANO
+                </Button>
+              </Link>
             </Box>
             <Box
               className="boxPlanos"
@@ -162,15 +174,21 @@ const Planos: NextPage = () => {
                 Ideal para Empresas que entenderam que a Internet é um grande
                 canal de divulgação e querem gerar resultados
               </Typography>
-              <Button
-                fullWidth
-                variant="contained"
-                size="large"
-                className="btnGeral"
-                sx={{ mt: 3 }}
+              <Link
+                href="https://wa.me/5511969203819?text=Olá,%20quero%20contratar%20ou%20saber%20mais%20sobre%20o%20plano%20SOCIAL%20ADS!"
+                rel="noopener noreferrer"
+                target="_blank"
               >
-                SELECIONAR PLANO
-              </Button>
+                <Button
+                  fullWidth
+                  variant="contained"
+                  size="large"
+                  className="btnGeral"
+                  sx={{ mt: 3 }}
+                >
+                  SELECIONAR PLANO
+                </Button>
+              </Link>
             </Box>
             <Box
               className="boxPlanos"
@@ -255,15 +273,21 @@ const Planos: NextPage = () => {
                 Ideal para Empresas que entenderam que a Internet é um grande
                 canal de divulgação e querem gerar resultados
               </Typography>
-              <Button
-                fullWidth
-                variant="contained"
-                size="large"
-                className="btnGeral"
-                sx={{ mt: 3 }}
+              <Link
+                href="https://wa.me/5511969203819?text=Olá,%20quero%20contratar%20ou%20saber%20mais%20sobre%20o%20plano%20GOOGLE%20E%20SOCIAL%20ADS!"
+                rel="noopener noreferrer"
+                target="_blank"
               >
-                SELECIONAR PLANO
-              </Button>
+                <Button
+                  fullWidth
+                  variant="contained"
+                  size="large"
+                  className="btnGeral"
+                  sx={{ mt: 3 }}
+                >
+                  SELECIONAR PLANO
+                </Button>
+              </Link>
             </Box>
             <Box
               className="boxPlanos"
@@ -385,15 +409,21 @@ const Planos: NextPage = () => {
                 Ideal para Profissionais Liberais e Pequenas Empresas que façam
                 o planejamento de conteúdo.
               </Typography>
-              <Button
-                fullWidth
-                variant="contained"
-                size="large"
-                className="btnGeral"
-                sx={{ mt: 3 }}
+              <Link
+                href="https://wa.me/5511969203819?text=Olá,%20quero%20contratar%20ou%20saber%20mais%20sobre%20o%20plano%20INSTAGRAM%20ARTE!"
+                rel="noopener noreferrer"
+                target="_blank"
               >
-                SELECIONAR PLANO
-              </Button>
+                <Button
+                  fullWidth
+                  variant="contained"
+                  size="large"
+                  className="btnGeral"
+                  sx={{ mt: 3 }}
+                >
+                  SELECIONAR PLANO
+                </Button>
+              </Link>
             </Box>
             <Box
               className="boxPlanos"
@@ -442,15 +472,21 @@ const Planos: NextPage = () => {
                 Ideal para Empresas que precisam de um planejamento mensal de
                 todo o conteúdo e arte.
               </Typography>
-              <Button
-                fullWidth
-                variant="contained"
-                size="large"
-                className="btnGeral"
-                sx={{ mt: 3 }}
+              <Link
+                href="https://wa.me/5511969203819?text=Olá,%20quero%20contratar%20ou%20saber%20mais%20sobre%20o%20plano%20ARTE%20E%20CONTEÚDO!"
+                rel="noopener noreferrer"
+                target="_blank"
               >
-                SELECIONAR PLANO
-              </Button>
+                <Button
+                  fullWidth
+                  variant="contained"
+                  size="large"
+                  className="btnGeral"
+                  sx={{ mt: 3 }}
+                >
+                  SELECIONAR PLANO
+                </Button>
+              </Link>
             </Box>
             <Box
               className="boxPlanos"
@@ -498,15 +534,21 @@ const Planos: NextPage = () => {
               <Typography className="colorwhite" variant="body1">
                 Ideal para Empresas que precisam de um volume maior de postagens
               </Typography>
-              <Button
-                fullWidth
-                variant="contained"
-                size="large"
-                className="btnGeral"
-                sx={{ mt: 3 }}
+              <Link
+                href="https://wa.me/5511969203819?text=Olá,%20quero%20contratar%20ou%20saber%20mais%20sobre%20o%20plano%20ARTE%20E%20CONTEÚDO%20MAX!"
+                rel="noopener noreferrer"
+                target="_blank"
               >
-                SELECIONAR PLANO
-              </Button>
+                <Button
+                  fullWidth
+                  variant="contained"
+                  size="large"
+                  className="btnGeral"
+                  sx={{ mt: 3 }}
+                >
+                  SELECIONAR PLANO
+                </Button>
+              </Link>
             </Box>
             <Box
               className="boxPlanos"
