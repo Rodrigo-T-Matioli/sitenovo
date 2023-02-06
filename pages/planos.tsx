@@ -938,8 +938,12 @@ const Planos: NextPage = () => {
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-              Nulla facilisi. Phasellus sollicitudin nulla et quam mattis
-              feugiat. Aliquam eget maximus est, id dignissim quam.
+              Em geral, é recomendável que uma campanha de Google Ads seja
+              mantida por pelo menos 3 a 6 meses para dar tempo suficiente para
+              otimizar e ajustar a estratégia de acordo com os dados de
+              desempenho. No entanto, algumas empresas podem ver resultados
+              significativos em menos tempo, enquanto outras podem precisar de
+              mais tempo.
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -962,9 +966,12 @@ const Planos: NextPage = () => {
           </AccordionSummary>
           <AccordionDetails>
             <Typography variant="body2">
-              Donec placerat, lectus sed mattis semper, neque lectus feugiat
-              lectus, varius pulvinar diam eros in elit. Pellentesque convallis
-              laoreet laoreet.
+              Depende de vários fatores, como o objetivo da campanha, o tamanho
+              do público-alvo, a concorrência no mercado e o orçamento
+              disponível. Algumas empresas podem começar com um orçamento mensal
+              de US$ 100 a US$ 500, enquanto outras podem investir muito mais. É
+              importante estabelecer um orçamento realista e ajustá-lo ao longo
+              do tempo, com base nos resultados da campanha.
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -987,8 +994,13 @@ const Planos: NextPage = () => {
           </AccordionSummary>
           <AccordionDetails>
             <Typography variant="body2">
-              Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer
-              sit amet egestas eros, vitae egestas augue. Duis vel est augue.
+              A eficácia da sua campanha de publicidade depende de muitos
+              fatores, incluindo o seu mercado-alvo, a concorrência, a qualidade
+              de sua campanha e a otimização contínua. Em geral, é recomendável
+              esperar pelo menos 4 a 6 semanas para começar a ver resultados
+              concretos e continuar a ajustar sua estratégia com base nos dados
+              de desempenho. No entanto, algumas empresas podem ver resultados
+              mais rapidamente, enquanto outras podem levar mais tempo.
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -1011,8 +1023,31 @@ const Planos: NextPage = () => {
           </AccordionSummary>
           <AccordionDetails>
             <Typography variant="body2">
-              Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer
-              sit amet egestas eros, vitae egestas augue. Duis vel est augue.
+              {"1) "}Configuramos e monitoramos as métricas de desempenho, como
+              cliques, impressões, taxas de conversão e retorno sobre o
+              investimento {"(ROI)"}.
+              <br />
+              <br />
+              {"2) "}Analisamos essas métricas para avaliar o sucesso da
+              campanha e identificar oportunidades de otimização.
+              <br />
+              <br />
+              {"3) "}Fazemos ajustes estratégicos baseados nas análises de
+              desempenho, incluindo ajustes no orçamento, na segmentação de
+              público-alvo e nas criações de anúncios.
+              <br />
+              <br />
+              {"4) "}Compartilhamos os relatórios mensalmente com os clientes,
+              fornecendo uma visão geral do desempenho da campanha e discutindo
+              as estratégias futuras.
+              <br />
+              <br />
+              {"4) "}Fazemos testes A/B para avaliar diferentes versões de
+              anúncios e caminhos de conversão para determinar a abordagem mais
+              eficaz.
+              <br />
+              <br />É importante ter uma abordagem precisa e continuar a
+              otimizar e ajustar as estratégias de acordo com os resultados.
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -1034,71 +1069,72 @@ const Planos: NextPage = () => {
             >
               <div>
                 <Image
-                  src="/tabatamaffini-depoimento.jpg"
-                  alt="Funil de vendas Black Fish Digital"
+                  src="/italodomenico-depoimento.png"
+                  alt="Depoimento Italo Domenico"
                   width={134}
                   height={134}
                   className="radius bordaDepoimento"
                 />
                 <Typography variant="body1">
-                  Contrary to popular belief, Lorem Ipsum is not simply random
-                  text. It has roots in a piece of classical Latin literature
-                  from 45 BC, making it over 2000 years old. Richard McClintock,
-                  a Latin professor at Hampden-Sydney College in Virginia,
-                  looked up one of the more obscure Latin words, consectetur,
-                  from a Lorem Ipsum passage.
+                  Estamos com a Black fish digital desde o começo, fizeram o
+                  desenvolvimento da marca e toda linha critiva para nossa
+                  comunicação, desde como fariamos os coteúdos até os anuncios,
+                  tenho muito cuidado com o conteúdo que faço, o Rodrigo pensou
+                  junto comigo a melhor forma de disponibilizar e vender, qual
+                  seria o melhor fluxo de venda, esta parceria só faz crescer
+                  nosso faturamento. Muito obrigado a Back Fish Digital.
                 </Typography>
                 <Typography variant="body1" color="primary" sx={{ mt: 3 }}>
-                  <strong>TABATA MAFFINI</strong>
+                  <strong>Italo Domenico</strong>
                 </Typography>
                 <Typography variant="body2" color="primary">
-                  TABATA MAFFINI ACADEMY
+                  EOLUÇÃO DO TREINO
                 </Typography>
               </div>
               <div>
                 <Image
-                  src="/tabatamaffini-depoimento.jpg"
-                  alt="Funil de vendas Black Fish Digital"
+                  src="/ricardo-pacheco-depoimento.png"
+                  alt="Depoimento Ricardo Pacheco"
                   width={134}
                   height={134}
                   className="radius bordaDepoimento"
                 />
                 <Typography variant="body1">
-                  Contrary to popular belief, Lorem Ipsum is not simply random
-                  text. It has roots in a piece of classical Latin literature
-                  from 45 BC, making it over 2000 years old. Richard McClintock,
-                  a Latin professor at Hampden-Sydney College in Virginia,
-                  looked up one of the more obscure Latin words, consectetur,
-                  from a Lorem Ipsum passage.
+                  Comecei com a Black Fish Digital fazendo só o planejamento de
+                  conteúdo, arte e texto para cada post do instagram, hoje faço
+                  a parte de instagram ads e esta dando muito certo, nos
+                  primeiros 3 meses já vi uma diferença grande nas vendas,
+                  criamos até um produto novo juntos. Estou muito feliz.
                 </Typography>
                 <Typography variant="body1" color="primary" sx={{ mt: 3 }}>
-                  <strong>TABATA MAFFINI</strong>
+                  <strong>Ricardo Pacheco</strong>
                 </Typography>
                 <Typography variant="body2" color="primary">
-                  TABATA MAFFINI ACADEMY
+                  PACHECO PERSONAL FIGHT
                 </Typography>
               </div>
               <div>
                 <Image
-                  src="/tabatamaffini-depoimento.jpg"
-                  alt="Funil de vendas Black Fish Digital"
+                  src="/rafa-depoimento.png"
+                  alt="Depoimento Rafa"
                   width={134}
                   height={134}
                   className="radius bordaDepoimento"
                 />
                 <Typography variant="body1">
-                  Contrary to popular belief, Lorem Ipsum is not simply random
-                  text. It has roots in a piece of classical Latin literature
-                  from 45 BC, making it over 2000 years old. Richard McClintock,
-                  a Latin professor at Hampden-Sydney College in Virginia,
-                  looked up one of the more obscure Latin words, consectetur,
-                  from a Lorem Ipsum passage.
+                  Comecei a trabalhar com a Black fish digital para fazer a
+                  reformulação da minha marca, quando vi a marca gostei tanto
+                  que pedi para criarem todas as embalagens dos produtos,
+                  catalogo de venda impresso e digital, nossa parceiria hoje é
+                  também no intagram, planejando, criando textos e artes que nos
+                  ajudam muito a vender, é muito bom no incio de cada mês ter
+                  todos os Posts e Stories já prontos.
                 </Typography>
                 <Typography variant="body1" color="primary" sx={{ mt: 3 }}>
-                  <strong>TABATA MAFFINI</strong>
+                  <strong>RAFAELA DIAMOND</strong>
                 </Typography>
                 <Typography variant="body2" color="primary">
-                  TABATA MAFFINI ACADEMY
+                  LIKE A DIAMOND
                 </Typography>
               </div>
             </Glider>

@@ -243,15 +243,17 @@ const EvolucaoTreino: NextPage = () => {
               </Typography>
             </Box>
           </Box>
-          <Button
-            fullWidth
-            variant="contained"
-            size="large"
-            className="btnbrancoverde"
-            sx={{ mt: 3, fontWeight: 700 }}
-          >
-            Orçamento
-          </Button>
+          <Link href="#orcamento" rel="noopener noreferrer">
+            <Button
+              fullWidth
+              variant="contained"
+              size="large"
+              className="btnbrancoverde"
+              sx={{ mt: 3, fontWeight: 700 }}
+            >
+              Orçamento
+            </Button>
+          </Link>
         </Box>
       </Box>
 

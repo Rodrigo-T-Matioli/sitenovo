@@ -245,71 +245,72 @@ const Cases: NextPage = () => {
             >
               <div>
                 <Image
-                  src="/tabatamaffini-depoimento.jpg"
-                  alt="Funil de vendas Black Fish Digital"
+                  src="/italodomenico-depoimento.png"
+                  alt="Depoimento Italo Domenico"
                   width={134}
                   height={134}
                   className="radius bordaDepoimento"
                 />
                 <Typography variant="body1">
-                  Contrary to popular belief, Lorem Ipsum is not simply random
-                  text. It has roots in a piece of classical Latin literature
-                  from 45 BC, making it over 2000 years old. Richard McClintock,
-                  a Latin professor at Hampden-Sydney College in Virginia,
-                  looked up one of the more obscure Latin words, consectetur,
-                  from a Lorem Ipsum passage.
+                  Estamos com a Black fish digital desde o começo, fizeram o
+                  desenvolvimento da marca e toda linha critiva para nossa
+                  comunicação, desde como fariamos os coteúdos até os anuncios,
+                  tenho muito cuidado com o conteúdo que faço, o Rodrigo pensou
+                  junto comigo a melhor forma de disponibilizar e vender, qual
+                  seria o melhor fluxo de venda, esta parceria só faz crescer
+                  nosso faturamento. Muito obrigado a Back Fish Digital.
                 </Typography>
                 <Typography variant="body1" color="primary" sx={{ mt: 3 }}>
-                  <strong>TABATA MAFFINI</strong>
+                  <strong>Italo Domenico</strong>
                 </Typography>
                 <Typography variant="body2" color="primary">
-                  TABATA MAFFINI ACADEMY
+                  EOLUÇÃO DO TREINO
                 </Typography>
               </div>
               <div>
                 <Image
-                  src="/tabatamaffini-depoimento.jpg"
-                  alt="Funil de vendas Black Fish Digital"
+                  src="/ricardo-pacheco-depoimento.png"
+                  alt="Depoimento Ricardo Pacheco"
                   width={134}
                   height={134}
                   className="radius bordaDepoimento"
                 />
                 <Typography variant="body1">
-                  Contrary to popular belief, Lorem Ipsum is not simply random
-                  text. It has roots in a piece of classical Latin literature
-                  from 45 BC, making it over 2000 years old. Richard McClintock,
-                  a Latin professor at Hampden-Sydney College in Virginia,
-                  looked up one of the more obscure Latin words, consectetur,
-                  from a Lorem Ipsum passage.
+                  Comecei com a Black Fish Digital fazendo só o planejamento de
+                  conteúdo, arte e texto para cada post do instagram, hoje faço
+                  a parte de instagram ads e esta dando muito certo, nos
+                  primeiros 3 meses já vi uma diferença grande nas vendas,
+                  criamos até um produto novo juntos. Estou muito feliz.
                 </Typography>
                 <Typography variant="body1" color="primary" sx={{ mt: 3 }}>
-                  <strong>TABATA MAFFINI</strong>
+                  <strong>Ricardo Pacheco</strong>
                 </Typography>
                 <Typography variant="body2" color="primary">
-                  TABATA MAFFINI ACADEMY
+                  PACHECO PERSONAL FIGHT
                 </Typography>
               </div>
               <div>
                 <Image
-                  src="/tabatamaffini-depoimento.jpg"
-                  alt="Funil de vendas Black Fish Digital"
+                  src="/rafa-depoimento.png"
+                  alt="Depoimento Rafa"
                   width={134}
                   height={134}
                   className="radius bordaDepoimento"
                 />
                 <Typography variant="body1">
-                  Contrary to popular belief, Lorem Ipsum is not simply random
-                  text. It has roots in a piece of classical Latin literature
-                  from 45 BC, making it over 2000 years old. Richard McClintock,
-                  a Latin professor at Hampden-Sydney College in Virginia,
-                  looked up one of the more obscure Latin words, consectetur,
-                  from a Lorem Ipsum passage.
+                  Comecei a trabalhar com a Black fish digital para fazer a
+                  reformulação da minha marca, quando vi a marca gostei tanto
+                  que pedi para criarem todas as embalagens dos produtos,
+                  catalogo de venda impresso e digital, nossa parceiria hoje é
+                  também no intagram, planejando, criando textos e artes que nos
+                  ajudam muito a vender, é muito bom no incio de cada mês ter
+                  todos os Posts e Stories já prontos.
                 </Typography>
                 <Typography variant="body1" color="primary" sx={{ mt: 3 }}>
-                  <strong>TABATA MAFFINI</strong>
+                  <strong>RAFAELA DIAMOND</strong>
                 </Typography>
                 <Typography variant="body2" color="primary">
-                  TABATA MAFFINI ACADEMY
+                  LIKE A DIAMOND
                 </Typography>
               </div>
             </Glider>
