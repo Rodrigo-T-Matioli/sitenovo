@@ -397,8 +397,8 @@ const Planos: NextPage = () => {
                 <strong>ARTE</strong>
               </Typography>
               <img
-                src="icon-google-ads.png"
-                alt="Icone Google Ads"
+                src="icon-instagram-artes.png"
+                alt="Icone instagram artes"
                 width={104}
                 height={104}
               />
@@ -460,7 +460,7 @@ const Planos: NextPage = () => {
                 <strong>ARTE E CONTEÚDO</strong>
               </Typography>
               <img
-                src="icon-social-ads.png"
+                src="icon-instagram-artes-copy.png"
                 alt="Icone Social Ads"
                 width={104}
                 height={104}
@@ -523,9 +523,9 @@ const Planos: NextPage = () => {
                 <strong>ARTE E CONTEÚDO MAX</strong>
               </Typography>
               <img
-                src="icon-social-google-ads.png"
+                src="icon-instagram-artes-copy-max.png"
                 alt="Icone Social e Google Ads"
-                width={202}
+                width={104}
                 height={104}
               />
               <Typography className="colorwhite" variant="h3" sx={{ mb: 2 }}>
