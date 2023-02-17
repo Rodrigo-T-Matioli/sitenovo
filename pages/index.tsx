@@ -265,11 +265,11 @@ const Home: NextPage = () => {
                 CONHEÇA O CASE <strong>EVOLUÇÃO DO TREINO</strong>
               </Typography>
               <Typography variant="h4" sx={{ color: "#491247" }}>
-                <strong>+ DE R$ 1MIL EM CONSULTORIA</strong>
+                <strong>+ 500% EM VENDAS</strong>
               </Typography>
               <Typography variant="body1">
                 Veja como a consultória bateu seu record de vendas e faturou
-                mais de R$ 500 mil em vendas, só com marketing digital:
+                mais de 500% em vendas, só com marketing digital:
               </Typography>
               <Link href="/evolucaodotreino" rel="noopener noreferrer">
                 <Button
