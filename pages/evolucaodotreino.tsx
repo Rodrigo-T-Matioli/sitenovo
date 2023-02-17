@@ -1,4 +1,4 @@
-import { Box, Button, Grid, Typography } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import type { NextPage } from "next";
 import Image from "next/image";
@@ -9,8 +9,6 @@ import mobileDark from "../public/caseevolucao/case-evolucao-treino-posts-dark.p
 import mobileLight from "../public/caseevolucao/case-evolucao-treino-posts.png";
 import caseSantanderDark from "../public/caseevolucao/case-santander-dark.png";
 import caseSantanderLight from "../public/caseevolucao/case-santander.png";
-import metricasDark from "../public/caseevolucao/cases-metrica-dark.png";
-import metricasLight from "../public/caseevolucao/cases-metrica.png";
 import FormularioOrcamento from "./formulario";
 import ResponsiveAppBarSec from "./navbarsecondary";
 const EvolucaoTreino: NextPage = () => {
@@ -46,7 +44,7 @@ const EvolucaoTreino: NextPage = () => {
             variant="h6"
             sx={{ textAlign: "center" }}
           >
-            Mais de 600 alunos e 450 mil em receita.
+            Mais 500% em vendas!
           </Typography>
         </Box>
       </Box>
@@ -169,7 +167,7 @@ const EvolucaoTreino: NextPage = () => {
         )}
       </Box>
 
-      <Box
+      {/* <Box
         sx={{
           background: theme.palette.mode === "dark" ? "#1e1e1e" : "#5ab54a",
         }}
@@ -255,7 +253,7 @@ const EvolucaoTreino: NextPage = () => {
             </Button>
           </Link>
         </Box>
-      </Box>
+      </Box> */}
 
       <Box className="containerpuro paddingG">
         <Box className="displayflexwrap" sx={{ margin: "auto" }}>

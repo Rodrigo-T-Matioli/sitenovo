@@ -74,11 +74,11 @@ const Cases: NextPage = () => {
                 CONHEÇA O CASE <strong>EVOLUÇÃO DO TREINO</strong>
               </Typography>
               <Typography variant="h4" className="colorwhite">
-                <strong>+ DE R$ 1MIL EM CONSULTORIA</strong>
+                <strong>+ 500% EM VENDAS</strong>
               </Typography>
               <Typography variant="body1" className="colorwhite">
-                Veja como rede de escolas bateu seu record de matrículas e
-                faturou mais de R$ 7mi em vendas, só com marketing digital:
+                Veja como a consultória bateu seu record de vendas e faturou
+                mais de 500% em vendas, só com marketing digital:
               </Typography>
               <Button
                 variant="contained"
