@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import Glider from "react-glider";
 import evolucaoTreino from "../public/evolucao-do-treino-cases.png";
+import importados from "../public/likeadiamond-cases.png";
 import santander from "../public/santander-cases-blackfishdigital.png";
 import FormularioOrcamento from "./formulario";
 import ResponsiveAppBar from "./navbar";
@@ -175,7 +176,7 @@ const Cases: NextPage = () => {
         </Box>
       </Box>
 
-      {/* <Box
+      <Box
         sx={{
           backgroundImage:
             theme.palette.mode === "dark"
@@ -191,34 +192,58 @@ const Cases: NextPage = () => {
       ></Box>
       <Box
         sx={{
-          background: theme.palette.mode === "dark" ? "#4e4e4e" : "#79c7e1",
+          background: theme.palette.mode === "dark" ? "#4e4e4e" : "#1a1a1a",
           zIndex: "100",
           position: "relative",
         }}
       >
         <Box className="containerpuro">
           <Grid container spacing={2} sx={{ py: 9 }}>
+            <Grid
+              item
+              xs={12}
+              md={6}
+              sx={{
+                position: "relative",
+                display: { xs: "block", md: "none" },
+                textAlign: "center",
+              }}
+            >
+              <Image
+                src={importados}
+                alt="Case Importados Black Fish Digital"
+                className="casesEvolucao"
+              />
+            </Grid>
             <Grid item xs={12} md={6}>
               <Typography variant="h6" className="colorwhite">
-                CONHEÇA O CASE <strong>EVOLUÇÃO DO TREINO</strong>
+                CONHEÇA O CASE <strong>LIKE A DIAMOND</strong>
               </Typography>
               <Typography variant="h4" className="colorwhite">
-                <strong>+ DE R$ 1MIL EM CONSULTORIA</strong>
+                <strong>CONTEÚDO E ARTE</strong>
               </Typography>
               <Typography variant="body1" className="colorwhite">
-                Veja como rede de escolas bateu seu record de matrículas e
-                faturou mais de R$ 7mi em vendas, só com marketing digital:
+                Planejamento mensal de todo o conteúdo e arte.
               </Typography>
               <Button
                 variant="contained"
                 size="large"
                 className="btnbrancoazul"
                 sx={{ mt: 3 }}
+                onClick={() => LinkMenu("/likeadiamond")}
               >
                 <strong>Ver case</strong>
               </Button>
             </Grid>
-            <Grid item xs={12} md={6} sx={{ position: "relative" }}>
+            <Grid
+              item
+              xs={12}
+              md={6}
+              sx={{
+                position: "relative",
+                display: { xs: "none", md: "block" },
+              }}
+            >
               <Image
                 src={importados}
                 alt="Case Importados Black Fish Digital"
@@ -227,7 +252,7 @@ const Cases: NextPage = () => {
             </Grid>
           </Grid>
         </Box>
-      </Box> */}
+      </Box>
 
       <Box className="homeBgCinza paddingG">
         <Box className="containerpuro" sx={{ textAlign: "center" }}>
