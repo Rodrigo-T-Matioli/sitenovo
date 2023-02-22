@@ -3,8 +3,8 @@ import { useTheme } from "@mui/material/styles";
 import type { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import caseEvolucaoDark from "../public/casesantander/case-evolucao-do-treino-dark.png";
 import caseEvolucaoLight from "../public/casesantander/case-evolucao-do-treino.png";
+import likeaDiamond from "../public/casesantander/case-like-a-diamond.png";
 import plataformaDark from "../public/casesantander/case-santander-plataforma-dark.png";
 import plataformaLight from "../public/casesantander/case-santander-plataforma.png";
 import siteExplicandoLight from "../public/casesantander/case-santander-siteexplicando-1.png";
@@ -168,7 +168,7 @@ const Satander: NextPage = () => {
           <Box className="displayflexwrap">
             <Box
               sx={{
-                width: { xs: "100%", lg: "100%" },
+                width: { xs: "100%", lg: "45%" },
               }}
             >
               <Box
@@ -186,19 +186,11 @@ const Satander: NextPage = () => {
                 }}
               >
                 <Link href="/evolucaodotreino" rel="noopener noreferrer">
-                  {theme.palette.mode === "dark" ? (
-                    <Image
-                      src={caseEvolucaoDark}
-                      className="casesInt"
-                      alt="Case Santander"
-                    />
-                  ) : (
-                    <Image
-                      src={caseEvolucaoLight}
-                      className="casesInt"
-                      alt="Case Santander"
-                    />
-                  )}
+                  <Image
+                    src={caseEvolucaoLight}
+                    className="casesInt"
+                    alt="Case Santander"
+                  />
                 </Link>
               </Box>
               <Typography
@@ -207,12 +199,9 @@ const Satander: NextPage = () => {
               >
                 EVOLUÇÃO DO TREINO
               </Typography>
-              <Typography variant="body1">
-                Veja como a consultória bateu seu record de vendas e faturou
-                mais de R$ 500 mil em vendas, só com marketing digital
-              </Typography>
+              <Typography variant="body1">Mais 500% em vendas!</Typography>
             </Box>
-            {/* <Box
+            <Box
               sx={{
                 width: { xs: "100%", lg: "45%" },
               }}
@@ -220,7 +209,7 @@ const Satander: NextPage = () => {
               <Box
                 sx={{
                   background:
-                    theme.palette.mode === "dark" ? "#ffffff" : "#7ac7e1",
+                    theme.palette.mode === "dark" ? "#ffffff" : "#000000",
                   backgroundImage:
                     theme.palette.mode === "dark"
                       ? "url(/caseevolucao/bg-outros-cases-dark.png)"
@@ -231,28 +220,21 @@ const Satander: NextPage = () => {
                   p: 0,
                 }}
               >
-                {theme.palette.mode === "dark" ? (
+                <Link href="/likeadiamond" rel="noopener noreferrer">
                   <Image
-                    src={importadosDark}
+                    src={likeaDiamond}
                     className="mobileEvolucao"
                     alt="Case importados"
                   />
-                ) : (
-                  <Image
-                    src={importadosLight}
-                    className="mobileEvolucao"
-                    alt="Case importados"
-                  />
-                )}
+                </Link>
               </Box>
               <Typography variant="h5" sx={{ fontWeight: 700, mb: 1 }}>
-                SANTANDER
+                LIKE A DIAMOND
               </Typography>
               <Typography variant="body1">
-                Como em 6 meses conseguimos chegar no resultado obtido apenas
-                com um produto que foi sensação no mercado.
+                Planejamento mensal de todo o conteúdo e arte.
               </Typography>
-            </Box> */}
+            </Box>
           </Box>
         </Box>
       </Box>

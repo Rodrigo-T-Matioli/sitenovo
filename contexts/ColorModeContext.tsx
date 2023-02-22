@@ -97,7 +97,7 @@ export const ColorModeProvider = ({ children }: ColorModeProps) => {
                     },
                     ".btnbrancoazul": {
                       backgroundColor: "#ffffff !important",
-                      color: "#79c7e1 !important",
+                      color: "#1a1a1a !important",
                       borderRadius: "100px !important",
                     },
                     ".btnbrancovermelho": {
@@ -155,6 +155,9 @@ export const ColorModeProvider = ({ children }: ColorModeProps) => {
                     },
                     ".homeBgCinza": {
                       background: "#f1f1f1",
+                    },
+                    ".homeBgCinzaEscuro": {
+                      background: "#1a1a1a",
                     },
                     ".btnCaseEvol": {
                       background: "#688e4d !important",
@@ -499,7 +502,9 @@ export const ColorModeProvider = ({ children }: ColorModeProps) => {
                     ".mobileEvolucao": {
                       ["@media (max-width:900px)"]: {
                         width: "80%",
+                        height: "auto",
                         margin: "auto",
+                        textAlign: "center",
                       },
                     },
                     ".casesInt": {
@@ -634,6 +639,9 @@ export const ColorModeProvider = ({ children }: ColorModeProps) => {
                     ".homeBgCinza": {
                       background: "#1e1e1e",
                     },
+                    ".homeBgCinzaEscuro": {
+                      background: "#1a1a1a",
+                    },
                     ".btnCaseEvol": {
                       background: "#688e4d !important",
                       color: "#f1f1f1 !important",
@@ -722,7 +730,7 @@ export const ColorModeProvider = ({ children }: ColorModeProps) => {
                       },
                     },
                     ".btnenviar": {
-                      backgroundColor: "#000000 !important",
+                      backgroundColor: "#93277c !important",
                       color: "#ffffff !important",
                       borderRadius: "100px !important",
                       fontSize: "18px !important",
@@ -962,7 +970,9 @@ export const ColorModeProvider = ({ children }: ColorModeProps) => {
                     ".mobileEvolucao": {
                       ["@media (max-width:900px)"]: {
                         width: "80%",
+                        height: "auto",
                         margin: "auto",
+                        textAlign: "center",
                       },
                     },
                     ".casesInt": {

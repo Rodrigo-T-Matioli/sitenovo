@@ -3,15 +3,13 @@ import { useTheme } from "@mui/material/styles";
 import type { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import plataformaDark from "../public/caseevolucao/case-evolucao-treino-plataforma-dark.png";
-import plataformaLight from "../public/caseevolucao/case-evolucao-treino-plataforma.png";
-import mobileDark from "../public/caseevolucao/case-evolucao-treino-posts-dark.png";
-import mobileLight from "../public/caseevolucao/case-evolucao-treino-posts.png";
 import caseSantanderLight from "../public/caseevolucao/case-santander.png";
-import likeaDiamond from "../public/casesantander/case-like-a-diamond.png";
+import caseEvolucaoLight from "../public/casesantander/case-evolucao-do-treino.png";
+import plataformaLight from "../public/lieadiamond/case-like-a-diamond-plataforma.jpg";
+import mobileLight from "../public/lieadiamond/case-like-a-diamond-posts.png";
 import FormularioOrcamento from "./formulario";
 import ResponsiveAppBarSec from "./navbarsecondary";
-const EvolucaoTreino: NextPage = () => {
+const LikeaDiamond: NextPage = () => {
   const theme = useTheme();
   return (
     <div>
@@ -22,47 +20,48 @@ const EvolucaoTreino: NextPage = () => {
           width: "100%",
           backgroundImage:
             theme.palette.mode === "dark"
-              ? "url(/caseevolucao/treino-em-evolucao-topo-dark.jpg)"
-              : "url(/caseevolucao/treino-em-evolucao-topo.jpg)",
+              ? "url(/lieadiamond/like-a-diamond-topo.jpg)"
+              : "url(/lieadiamond/like-a-diamond-topo.jpg)",
           backgroundSize: "cover",
           backgroundRepeater: "no-repeat",
           display: "flex",
           alignItems: "center",
-          justifyContent: "center",
+          justifyContent: "flex-start",
+          padding: { xs: "5%", lg: "10%" },
         }}
       >
         <Box>
           <Typography
             className="colorwhite"
             variant="h2"
-            sx={{ textAlign: "center" }}
+            sx={{ textAlign: "left" }}
           >
-            <strong>MARKETING QUE VENDE</strong>
+            <strong>CONTEÚDO E ARTE</strong>
           </Typography>
-          <Typography
-            className="colorwhite"
-            variant="h6"
-            sx={{ textAlign: "center" }}
-          >
-            Mais 500% em vendas!
+          <Typography className="colorwhite" variant="h6">
+            Planejamento mensal de todo o conteúdo e arte.
           </Typography>
         </Box>
       </Box>
 
-      <Box className="paddingM homeBgCinza">
+      <Box className="paddingM homeBgCinzaEscuro">
         <Box className="containerpuro displayflexwrap">
           <Box sx={{ margin: { xs: "auto", lg: "0" } }}>
             <Typography
               variant="h4"
-              sx={{ fontWeight: 700, textAlign: { xs: "center", lg: "left" } }}
+              sx={{
+                fontWeight: 700,
+                textAlign: { xs: "center", lg: "left" },
+                color: "#ffffff",
+              }}
             >
-              DESDE A CRIAÇÃO
+              CRIAÇÃO DA
             </Typography>
             <Typography
               variant="h4"
-              sx={{ textAlign: { xs: "center", lg: "left" } }}
+              sx={{ textAlign: { xs: "center", lg: "left" }, color: "#ffffff" }}
             >
-              DA IDENTIDADE VISUAL
+              IDENTIDADE VISUAL
             </Typography>
           </Box>
           <Box sx={{ display: { xs: "none", lg: "block" } }}>
@@ -73,25 +72,14 @@ const EvolucaoTreino: NextPage = () => {
               height={54}
             />
           </Box>
-          {theme.palette.mode === "dark" ? (
-            <Box sx={{ margin: { xs: "auto", lg: "0" } }}>
-              <Image
-                src="/caseevolucao/logo-evolucao-do-treino-dark.png"
-                alt="Logo evolução do treino"
-                width={320}
-                height={112}
-              />
-            </Box>
-          ) : (
-            <Box sx={{ margin: { xs: "auto", lg: "0" } }}>
-              <Image
-                src="/caseevolucao/logo-evolucao-do-treino.png"
-                alt="Logo evolução do treino"
-                width={320}
-                height={112}
-              />
-            </Box>
-          )}
+          <Box sx={{ margin: { xs: "auto", lg: "0" } }}>
+            <Image
+              src="/lieadiamond/logo-like-a-diamond.png"
+              alt="Logo like a diamond"
+              width={320}
+              height={112}
+            />
+          </Box>
         </Box>
       </Box>
 
@@ -101,11 +89,7 @@ const EvolucaoTreino: NextPage = () => {
             width: { xs: "100%", lg: "50%" },
           }}
         >
-          <Typography
-            variant="h2"
-            className="corverde"
-            sx={{ fontWeight: 700, mb: 4 }}
-          >
+          <Typography variant="h2" sx={{ fontWeight: 700, mb: 4 }}>
             CAMPANHAS QUE IMPACTAM E GERAM RESULTADOS!
           </Typography>
           <Typography variant="body1">
@@ -118,28 +102,89 @@ const EvolucaoTreino: NextPage = () => {
         <Box
           sx={{
             margin: { xs: "auto", lg: "0" },
+            width: { xs: "100%", lg: "50%" },
+            textAlign: "center",
           }}
         >
-          {theme.palette.mode === "dark" ? (
-            <Image
-              src={mobileDark}
-              className="mobileEvolucao"
-              alt="Posts evolução do treino"
-            />
-          ) : (
-            <Image
-              src={mobileLight}
-              className="mobileEvolucao"
-              alt="Posts evolução do treino"
-            />
-          )}
+          <Image
+            src={mobileLight}
+            className="mobileEvolucao"
+            alt="Posts evolução do treino"
+          />
+        </Box>
+      </Box>
+
+      <Box className="homeBgCinza">
+        <Box className="containerpuro paddingTopM paddingBottomM">
+          <Typography
+            variant="h3"
+            sx={{ fontWeight: 700, mb: 1, textAlign: "center" }}
+          >
+            CONTEÚDO QUE ATRAI E CONVERTE
+          </Typography>
+          <Typography variant="body1" sx={{ mb: 4, textAlign: "center" }}>
+            Nós criamos conteúdo que cativa e convence, transformando visitantes
+            em clientes leais para sua marca.
+            <br />
+            Descubra como agora!
+          </Typography>
+          <Grid container spacing={3} className="paddingTopM">
+            <Grid item xs={12} md={6} lg={4} sx={{ textAlign: "center", p: 2 }}>
+              <Image
+                src="/lieadiamond/case-diamond_01.jpg"
+                alt="Case post Like a Diamond"
+                width={320}
+                height={320}
+              />
+            </Grid>
+            <Grid item xs={12} md={6} lg={4} sx={{ textAlign: "center", p: 2 }}>
+              <Image
+                src="/lieadiamond/case-diamond_02.jpg"
+                alt="Case post Like a Diamond"
+                width={320}
+                height={320}
+              />
+            </Grid>
+            <Grid item xs={12} md={6} lg={4} sx={{ textAlign: "center", p: 2 }}>
+              <Image
+                src="/lieadiamond/case-diamond_03.jpg"
+                alt="Case post Like a Diamond"
+                width={320}
+                height={320}
+              />
+            </Grid>
+            <Grid item xs={12} md={6} lg={4} sx={{ textAlign: "center", p: 2 }}>
+              <Image
+                src="/lieadiamond/case-diamond_04.jpg"
+                alt="Case post Like a Diamond"
+                width={320}
+                height={320}
+              />
+            </Grid>
+            <Grid item xs={12} md={6} lg={4} sx={{ textAlign: "center", p: 2 }}>
+              <Image
+                src="/lieadiamond/case-diamond_05.jpg"
+                alt="Case post Like a Diamond"
+                width={320}
+                height={320}
+              />
+            </Grid>
+            <Grid item xs={12} md={6} lg={4} sx={{ textAlign: "center", p: 2 }}>
+              <Image
+                src="/lieadiamond/case-diamond_06.jpg"
+                alt="Case post Like a Diamond"
+                width={320}
+                height={320}
+              />
+            </Grid>
+          </Grid>
         </Box>
       </Box>
 
       <Box
         sx={{
           textAlign: "center",
-          background: theme.palette.mode === "dark" ? "#121212" : "#f1f1f1",
+          background: theme.palette.mode === "dark" ? "#121212" : "#ffffff",
           backgroundImage: "url(/caseevolucao/bg-plataforma.png)",
           backgroundRepeat: "repeat-x",
         }}
@@ -152,151 +197,11 @@ const EvolucaoTreino: NextPage = () => {
         >
           PLATAFORMAS QUE VENDEM E IMPACTAM
         </Typography>
-        {theme.palette.mode === "dark" ? (
-          <Image
-            src={plataformaDark}
-            className="plataformaEvolucao"
-            alt="Plataforma evolução do treino"
-          />
-        ) : (
-          <Image
-            src={plataformaLight}
-            className="plataformaEvolucao"
-            alt="Plataforma evolução do treino"
-          />
-        )}
-      </Box>
-
-      {/* <Box
-        sx={{
-          background: theme.palette.mode === "dark" ? "#1e1e1e" : "#5ab54a",
-        }}
-      >
-        <Box
-          className="containerpuro paddingG"
-          sx={{
-            textAlign: "center",
-          }}
-        >
-          <Box className="positionRelative">
-            {theme.palette.mode === "dark" ? (
-              <Image
-                src={metricasDark}
-                className="metricasEvolucao"
-                alt="Metricas evolução do treino"
-              />
-            ) : (
-              <Image
-                src={metricasLight}
-                className="metricasEvolucao"
-                alt="Metricas evolução do treino"
-              />
-            )}
-            <Box className="metricaTopEsq">
-              <Typography
-                variant="h2"
-                className="colorwhite"
-                sx={{ fontWeight: 700 }}
-              >
-                6.4K
-              </Typography>
-              <Typography variant="body1" className="colorwhite">
-                INVESTIMENTO
-              </Typography>
-            </Box>
-            <Box className="metricaTopDir">
-              <Typography
-                variant="h2"
-                className="colorwhite"
-                sx={{ fontWeight: 700 }}
-              >
-                15%
-              </Typography>
-              <Typography variant="body1" className="colorwhite">
-                CONVERSAO MÉDIA
-              </Typography>
-            </Box>
-            <Box className="metricaBottomEsq">
-              <Typography
-                variant="h2"
-                className="colorwhite"
-                sx={{ fontWeight: 700 }}
-              >
-                +450
-              </Typography>
-              <Typography variant="body1" className="colorwhite">
-                CADASTROS (LEADS)
-              </Typography>
-            </Box>
-            <Box className="metricaBottomDir">
-              <Typography
-                variant="h2"
-                className="colorwhite"
-                sx={{ fontWeight: 700 }}
-              >
-                28%
-              </Typography>
-              <Typography variant="body1" className="colorwhite">
-                CRESCIMENTO
-              </Typography>
-            </Box>
-          </Box>
-          <Link href="#orcamento" rel="noopener noreferrer">
-            <Button
-              fullWidth
-              variant="contained"
-              size="large"
-              className="btnbrancoverde"
-              sx={{ mt: 3, fontWeight: 700 }}
-            >
-              Orçamento
-            </Button>
-          </Link>
-        </Box>
-      </Box> */}
-
-      <Box className="containerpuro paddingG">
-        <Box className="displayflexwrap" sx={{ margin: "auto" }}>
-          {theme.palette.mode === "dark" ? (
-            <Box sx={{ margin: { xs: "auto", lg: "0" } }}>
-              <Image
-                src="/caseevolucao/depoimento-italo-dark.png"
-                alt="Posts evolução do treino"
-                width={250}
-                height={250}
-              />
-            </Box>
-          ) : (
-            <Box sx={{ margin: { xs: "auto", lg: "0" } }}>
-              <Image
-                src="/caseevolucao/depoimento-italo.png"
-                alt="Posts evolução do treino"
-                width={250}
-                height={250}
-              />
-            </Box>
-          )}
-          <Box sx={{ width: { xs: "100%", lg: "calc(100% - 300px)" } }}>
-            <Typography
-              variant="h3"
-              className="corverde"
-              sx={{
-                fontWeight: 700,
-                mb: 3,
-                textAlign: { xs: "center", lg: "left" },
-              }}
-            >
-              QUEM CONFIA, RECOMENDA!
-            </Typography>
-            <Typography variant="body1">
-              Lorem ipsum, or lipsum as it is sometimes known, is dummy text
-              used in laying out print, graphic or web dettsigns. The passage is
-              attributed to an unknown typesetter in the 15th century who is
-              thought to have scrambled parts of Ciceros De Finibus Bonorum et
-              Malorum for use in a type specimen book. It usually begins with:
-            </Typography>
-          </Box>
-        </Box>
+        <Image
+          src={plataformaLight}
+          className="plataformaEvolucao"
+          alt="Plataforma evolução do treino"
+        />
       </Box>
 
       <Box
@@ -324,8 +229,7 @@ const EvolucaoTreino: NextPage = () => {
             >
               <Box
                 sx={{
-                  background:
-                    theme.palette.mode === "dark" ? "#ffffff" : "#c37fb6",
+                  background: "#c37fb6",
                   backgroundImage:
                     theme.palette.mode === "dark"
                       ? "url(/caseevolucao/bg-outros-cases-dark.png)"
@@ -359,8 +263,7 @@ const EvolucaoTreino: NextPage = () => {
             >
               <Box
                 sx={{
-                  background:
-                    theme.palette.mode === "dark" ? "#ffffff" : "#000000",
+                  background: "#9cc480",
                   backgroundImage:
                     theme.palette.mode === "dark"
                       ? "url(/caseevolucao/bg-outros-cases-dark.png)"
@@ -371,20 +274,21 @@ const EvolucaoTreino: NextPage = () => {
                   p: 0,
                 }}
               >
-                <Link href="/likeadiamond" rel="noopener noreferrer">
+                <Link href="/evolucaodotreino" rel="noopener noreferrer">
                   <Image
-                    src={likeaDiamond}
+                    src={caseEvolucaoLight}
                     className="mobileEvolucao"
                     alt="Case importados"
                   />
                 </Link>
               </Box>
-              <Typography variant="h5" sx={{ fontWeight: 700, mb: 1 }}>
-                LIKE A DIAMOND
+              <Typography
+                variant="h5"
+                sx={{ fontWeight: 700, mb: 1, textDecoration: "none" }}
+              >
+                EVOLUÇÃO DO TREINO
               </Typography>
-              <Typography variant="body1">
-                Planejamento mensal de todo o conteúdo e arte.
-              </Typography>
+              <Typography variant="body1">Mais 500% em vendas!</Typography>
             </Box>
           </Box>
         </Box>
@@ -466,4 +370,4 @@ const EvolucaoTreino: NextPage = () => {
   );
 };
 
-export default EvolucaoTreino;
+export default LikeaDiamond;

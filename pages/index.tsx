@@ -248,8 +248,10 @@ const Home: NextPage = () => {
             sx={{
               textAlign: "center",
               position: "relative",
+              backgroundImage: "url(/bg-cases-home.jpg)",
+              backgroundSize: "cover",
             }}
-            className="bgroxo homeEvolucao"
+            className="homeEvolucao"
           >
             <Image
               src="/evolucao-do-treino-home-blackfishdigital.png"
@@ -296,8 +298,10 @@ const Home: NextPage = () => {
               display: { xs: "block", md: "none" },
               textAlign: "center",
               position: "relative",
+              backgroundImage: "url(/bg-cases-home.jpg)",
+              backgroundSize: "cover",
             }}
-            className="bgroxo homeEvolucao"
+            className="homeEvolucao"
           >
             <Image
               src={SantanderCase}
@@ -342,8 +346,10 @@ const Home: NextPage = () => {
               display: { xs: "none", md: "block" },
               textAlign: "center",
               position: "relative",
+              backgroundImage: "url(/bg-cases-home.jpg)",
+              backgroundSize: "cover",
             }}
-            className="bgroxo homeEvolucao"
+            className="homeEvolucao"
           >
             <Image
               src={SantanderCase}
