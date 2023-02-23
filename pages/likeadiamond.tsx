@@ -3,6 +3,7 @@ import { useTheme } from "@mui/material/styles";
 import type { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import PagesHead from "../components/Pages";
 import caseSantanderLight from "../public/caseevolucao/case-santander.png";
 import caseEvolucaoLight from "../public/casesantander/case-evolucao-do-treino.png";
 import plataformaLight from "../public/lieadiamond/case-like-a-diamond-plataforma.jpg";
@@ -12,7 +13,11 @@ import ResponsiveAppBarSec from "./navbarsecondary";
 const LikeaDiamond: NextPage = () => {
   const theme = useTheme();
   return (
-    <div>
+    <PagesHead
+      title="Case Like a Diamond - Black Fish agencia de marketing digital"
+      description="Confira como ajudamos a Like a Diamond a ter uma presença digital mais profissional na parte de planejamento, conteúdo e arte. Veja nosso case de sucesso agora mesmo!"
+      path="/likeadiamond"
+    >
       <ResponsiveAppBarSec />
       <Box
         sx={{
@@ -366,7 +371,7 @@ const LikeaDiamond: NextPage = () => {
           </Grid>
         </Grid>
       </Box>
-    </div>
+    </PagesHead>
   );
 };
 

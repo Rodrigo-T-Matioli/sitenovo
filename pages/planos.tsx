@@ -12,6 +12,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
 import Glider from "react-glider";
+import PagesHead from "../components/Pages";
 import FormularioOrcamento from "./formulario";
 import ResponsiveAppBar from "./navbar";
 
@@ -27,7 +28,11 @@ const Planos: NextPage = () => {
     router.push(`${link}`);
   };
   return (
-    <div>
+    <PagesHead
+      title="Planos Black Fish - Agencia de marketing digital"
+      description="Escolha o plano de marketing digital ideal para o seu negócio e impulsione sua presença online. Conquiste mais clientes hoje mesmo!"
+      path="/planos"
+    >
       <ResponsiveAppBar />
       <Box
         sx={{
@@ -1205,7 +1210,7 @@ const Planos: NextPage = () => {
           </Grid>
         </Grid>
       </Box>
-    </div>
+    </PagesHead>
   );
 };
 

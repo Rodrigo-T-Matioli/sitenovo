@@ -3,6 +3,7 @@ import { useTheme } from "@mui/material/styles";
 import type { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import PagesHead from "../components/Pages";
 import plataformaDark from "../public/caseevolucao/case-evolucao-treino-plataforma-dark.png";
 import plataformaLight from "../public/caseevolucao/case-evolucao-treino-plataforma.png";
 import mobileDark from "../public/caseevolucao/case-evolucao-treino-posts-dark.png";
@@ -14,7 +15,11 @@ import ResponsiveAppBarSec from "./navbarsecondary";
 const EvolucaoTreino: NextPage = () => {
   const theme = useTheme();
   return (
-    <div>
+    <PagesHead
+      title="Case Evolução do Treino - Black Fish agencia de marketing digital"
+      description="Confira como ajudamos a Evolução do Treino a alcançar resultados incríveis em marketing digital. Veja nosso case de sucesso agora mesmo!"
+      path="/evolucaodotreino"
+    >
       <ResponsiveAppBarSec />
       <Box
         sx={{
@@ -462,7 +467,7 @@ const EvolucaoTreino: NextPage = () => {
           </Grid>
         </Grid>
       </Box>
-    </div>
+    </PagesHead>
   );
 };
 
