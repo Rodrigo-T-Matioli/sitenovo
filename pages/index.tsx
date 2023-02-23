@@ -9,6 +9,7 @@ import type { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Glider from "react-glider";
+import PagesHead from "../components/Pages";
 import profilePic from "../public/funil-de-vendas.jpg";
 import mapaBlabkDark from "../public/mapa-blackfishdigital-dark.png";
 import mapaBlabk from "../public/mapa-blackfishdigital.jpg";
@@ -22,7 +23,11 @@ const Home: NextPage = () => {
   const bgImageDark = 'url("banner-blackfishdigital-dark.jpg")';
 
   return (
-    <div>
+    <PagesHead
+      title="Black Fish - Agencia de marketing digital"
+      description="Alavanque sua presença online com a expertise em marketing digital da nossa agência. Aumente sua visibilidade e conversões agora mesmo!"
+      path="/"
+    >
       <ResponsiveAppBar />
       <Box
         sx={{
@@ -568,7 +573,7 @@ const Home: NextPage = () => {
           </Grid>
         </Grid>
       </Box>
-    </div>
+    </PagesHead>
   );
 };
 

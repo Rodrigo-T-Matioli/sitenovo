@@ -4,6 +4,7 @@ import type { NextPage } from "next";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import Glider from "react-glider";
+import PagesHead from "../components/Pages";
 import evolucaoTreino from "../public/evolucao-do-treino-cases.png";
 import importados from "../public/likeadiamond-cases.png";
 import santander from "../public/santander-cases-blackfishdigital.png";
@@ -16,7 +17,11 @@ const Cases: NextPage = () => {
     router.push(`${link}`);
   };
   return (
-    <div>
+    <PagesHead
+      title="Cases Black Fish - Agencia de marketing digital"
+      description="Conheça nossos cases de sucesso em marketing digital e veja como ajudamos nossos clientes a alcançarem seus objetivos online."
+      path="/cases"
+    >
       <ResponsiveAppBar />
       <Box
         sx={{
@@ -415,7 +420,7 @@ const Cases: NextPage = () => {
           </Grid>
         </Grid>
       </Box>
-    </div>
+    </PagesHead>
   );
 };
 

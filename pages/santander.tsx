@@ -3,6 +3,7 @@ import { useTheme } from "@mui/material/styles";
 import type { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import PagesHead from "../components/Pages";
 import caseEvolucaoLight from "../public/casesantander/case-evolucao-do-treino.png";
 import likeaDiamond from "../public/casesantander/case-like-a-diamond.png";
 import plataformaDark from "../public/casesantander/case-santander-plataforma-dark.png";
@@ -15,7 +16,11 @@ import ResponsiveAppBarSec from "./navbarsecondary";
 const Satander: NextPage = () => {
   const theme = useTheme();
   return (
-    <div>
+    <PagesHead
+      title="Case Santander - Black Fish agencia de marketing digital"
+      description="Confira a plataforma que desenvolvemos para o Santander. Veja nosso case de sucesso agora mesmo!"
+      path="/santander"
+    >
       <ResponsiveAppBarSec />
       <Box
         sx={{
@@ -311,7 +316,7 @@ const Satander: NextPage = () => {
           </Grid>
         </Grid>
       </Box>
-    </div>
+    </PagesHead>
   );
 };
 
