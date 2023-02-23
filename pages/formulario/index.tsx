@@ -4,6 +4,7 @@ import Checkbox from "@mui/material/Checkbox";
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 import "glider-js/glider.min.css";
+import Link from "next/link";
 import * as React from "react";
 
 function FormularioOrcamento() {
@@ -300,20 +301,26 @@ function FormularioOrcamento() {
               <Grid item xs={12} md={6} sx={{ textAlign: "center", p: 2 }}>
                 <Box className="areaTel">
                   <Box sx={{ margin: "auto", p: 2 }}>
-                    <Typography
-                      variant="h3"
-                      className="colorwhite txtRodape"
-                      sx={{ mt: 1 }}
+                    <Link
+                      href="https://wa.me/5511969203819?text=Olá."
+                      rel="noopener noreferrer"
+                      target="_blank"
                     >
-                      (11) 9 6920-3819
-                    </Typography>
-                    <Typography
+                      <Typography
+                        variant="h3"
+                        className="colorwhite txtRodape"
+                        sx={{ mt: 1 }}
+                      >
+                        (11) 9 6920-3819
+                      </Typography>
+                    </Link>
+                    {/* <Typography
                       variant="h6"
                       className="colorwhite txtRodape"
                       sx={{ mt: 4 }}
                     >
                       Rua José de Oliveira, 270, Sorocaba
-                    </Typography>
+                    </Typography> */}
                     <Typography variant="h6" className="colorwhite txtRodape">
                       <strong>rodrigo@blackfishdigital.com.br</strong>
                     </Typography>

@@ -14,8 +14,8 @@ const SEO = {
     images: [{
       url: 'https://blackfishdigital.com.br/og.png',
       alt: title,
-      width: 1280,
-      height: 720,
+      width: 1024,
+      height: 1024,
     }]
   }
 }
