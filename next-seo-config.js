@@ -12,7 +12,7 @@ const SEO = {
     title,
     description,
     images: [{
-      url: 'https://blackfishdigital.com.br/public/og.png',
+      url: 'https://blackfishdigital.com.br/og.png',
       alt: title,
       width: 1280,
       height: 720,
